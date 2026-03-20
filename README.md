@@ -21,4 +21,4 @@ Dự án quản lý bán hàng chuyên nghiệp được xây dựng trên nền
 4. Nhấn **F5** để bắt đầu trải nghiệm!
 
 ---
-*Dự án được thực hiện bởi Đương - Sinh viên CNTT Cao đẳng Kỹ thuật Cao Thắng.*
+*Dự án được thực hiện bởi DuongDevv - Sinh viên CNTT Cao đẳng Kỹ thuật Cao Thắng.*
