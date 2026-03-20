@@ -27,6 +27,7 @@ Trong bối cảnh thị trường thời trang đang phát triển mạnh mẽ 
 
   <!-- MÔ TẢ -->
 <div id="Muctieu"></div>
+
 ## II. Mục tiêu
 * Ứng dụng thực tế: Thay thế hình thức quản lý thủ công cồng kềnh, giảm thiểu sai sót đáng kể trong nghiệp vụ kế toán và kho vận.
 
@@ -36,6 +37,7 @@ Trong bối cảnh thị trường thời trang đang phát triển mạnh mẽ 
 
 <!-- CÔNG NGHỆ & kIẾN TRÚC -->
 <div id="Congnghe"></div>
+
 ## III. Công nghệ & Kiến trúc
 🛠 Tech Stack
 * Ngôn ngữ: C# (.NET Framework)
@@ -53,6 +55,7 @@ Trong bối cảnh thị trường thời trang đang phát triển mạnh mẽ 
 
 <!-- TÍNH NĂNG -->
 <div id="Tinhnang"></div>
+
 ## IV. Tính năng "Sáng giá"
 Hệ thống được thiết kế sát với thực tiễn nghiệp vụ, bao gồm:
 
@@ -70,6 +73,7 @@ Hệ thống được thiết kế sát với thực tiễn nghiệp vụ, bao g
 
 <!-- ĐỘI NGŨ -->
 <div id = "Doingu"></div>
+
 ## V. Tác giả
 * Nguyễn Quốc Đương (DuongDev) - Sinh viên CNTT, Cao đẳng Kỹ thuật Cao Thắng.
 
@@ -78,10 +82,11 @@ Hệ thống được thiết kế sát với thực tiễn nghiệp vụ, bao g
 
 <!-- TỔNG KẾT -->
 <div id="Tongket"></div>
+
 ## VI. Tổng kết
 Sản phẩm là kết quả của quá trình nghiên cứu và vận dụng những kiến thức lập trình thực tế. Thông qua đồ án này, em đã làm chủ được quy trình xây dựng phần mềm chuyên nghiệp, từ khâu thiết kế Database đến triển khai mã nguồn sạch (Clean Code).
 
-Dù đã cố gắng hoàn thiện, sản phẩm vẫn có thể còn những điểm cần cải tiến. Em luôn trân trọng và mong nhận được mọi ý kiến đóng góp từ thầy cô và các bạn để nâng cấp phần mềm tốt hơn trong tương lai.
+Dù đã cố gắng hoàn thiện, sản phẩm vẫn có thể còn những điểm cần cải tiến. Tôi luôn trân trọng và mong nhận được mọi ý kiến đóng góp từ thầy cô và các bạn để nâng cấp phần mềm tốt hơn trong tương lai.
 
 Trân trọng cảm ơn!
 
