@@ -1,0 +1,17 @@
+D:\C#\Project\QLShopQuanAo\QLShopQuanAo\bin\Debug\QLShopQuanAo.exe.config
+D:\C#\Project\QLShopQuanAo\QLShopQuanAo\bin\Debug\QLShopQuanAo.exe
+D:\C#\Project\QLShopQuanAo\QLShopQuanAo\bin\Debug\QLShopQuanAo.pdb
+D:\C#\Project\QLShopQuanAo\QLShopQuanAo\bin\Debug\EPPlusFree.dll
+D:\C#\Project\QLShopQuanAo\QLShopQuanAo\bin\Debug\EPPlusFree.xml
+D:\C#\Project\QLShopQuanAo\QLShopQuanAo\obj\Debug\QLShopQuanAo.csproj.AssemblyReference.cache
+D:\C#\Project\QLShopQuanAo\QLShopQuanAo\obj\Debug\QLShopQuanAo.frmLogin.resources
+D:\C#\Project\QLShopQuanAo\QLShopQuanAo\obj\Debug\QLShopQuanAo.Properties.Resources.resources
+D:\C#\Project\QLShopQuanAo\QLShopQuanAo\obj\Debug\QLShopQuanAo.Views.Main.ChangePassword.frmChangePassword.resources
+D:\C#\Project\QLShopQuanAo\QLShopQuanAo\obj\Debug\QLShopQuanAo.Views.Main.frmMain.resources
+D:\C#\Project\QLShopQuanAo\QLShopQuanAo\obj\Debug\QLShopQuanAo.Views.Main.Order.frmInvoice.resources
+D:\C#\Project\QLShopQuanAo\QLShopQuanAo\obj\Debug\QLShopQuanAo.Views.Main.Order.frmPayment.resources
+D:\C#\Project\QLShopQuanAo\QLShopQuanAo\obj\Debug\QLShopQuanAo.csproj.GenerateResource.cache
+D:\C#\Project\QLShopQuanAo\QLShopQuanAo\obj\Debug\QLShopQuanAo.csproj.CoreCompileInputs.cache
+D:\C#\Project\QLShopQuanAo\QLShopQuanAo\obj\Debug\QLShopQu.66C03F1E.Up2Date
+D:\C#\Project\QLShopQuanAo\QLShopQuanAo\obj\Debug\QLShopQuanAo.exe
+D:\C#\Project\QLShopQuanAo\QLShopQuanAo\obj\Debug\QLShopQuanAo.pdb
