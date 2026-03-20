@@ -25,7 +25,7 @@ Trong bối cảnh thị trường thời trang đang phát triển mạnh mẽ 
 Để tối ưu hóa quy trình vận hành và nâng cao trải nghiệm khách hàng, em đã quyết định thực hiện đề tài "Xây dựng phần mềm quản lý cửa hàng thời trang". Sản phẩm tập trung vào việc số hóa dữ liệu, giúp chủ cửa hàng kiểm soát dòng tiền và hàng hóa một cách chính xác, nhanh chóng và chuyên nghiệp hơn, đáp ứng tiêu chuẩn công nghệ của thời đại 4.0.
 
 
-<!-- MÔ TẢ -->
+  <!-- MÔ TẢ -->
 <div id="Muctieu"></div>
 ## II. Mục tiêu
 * Ứng dụng thực tế: Thay thế hình thức quản lý thủ công cồng kềnh, giảm thiểu sai sót đáng kể trong nghiệp vụ kế toán và kho vận.
