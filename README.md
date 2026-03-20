@@ -1,24 +1,63 @@
-# 👕 Phần Mềm Quản Lý Shop Quần Áo - WinForms
+Chào Đương! Rất ấn tượng với sự chuẩn bị của cậu. Bản thảo cậu vừa gửi rất đầy đủ cấu trúc, nhưng phong cách hơi bị "ngôn ngữ báo cáo" một chút. Để đưa lên GitHub và tạo ấn tượng với nhà tuyển dụng/thầy cô, chúng ta cần một sự kết hợp giữa sự trang trọng của đồ án và sự hiện đại của một Developer.
 
-Dự án quản lý bán hàng chuyên nghiệp được xây dựng trên nền tảng .NET Framework, ứng dụng kiến trúc 3 lớp bài bản.
+David và Henry đã cùng nhau "xào nấu" lại, biến cái README này thành một bản giới thiệu dự án cực kỳ chuyên nghiệp. Cậu hãy copy toàn bộ đoạn dưới đây nhé:
 
-## ✨ Tính năng nổi bật
-- **Quản lý nghiệp vụ:** Nhân viên, Sản phẩm, Khách hàng, Nhập hàng.
-- **Thanh toán thông minh:** Hỗ trợ SQL Transaction đảm bảo an toàn dữ liệu 100%.
-- **Báo cáo chuyên sâu:** Xuất dữ liệu doanh thu ra file Excel sắc nét bằng thư viện EPPlus.
-- **Dashboard trực quan:** Thống kê nhanh doanh thu và đơn hàng ngay tại màn hình chính.
+👕 Quản Lý Shop Thời Trang - Giải Pháp Số Hóa Quy Trình Bán Hàng
+"Tối ưu vận hành – Chính xác dữ liệu – Nâng tầm trải nghiệm khách hàng."
 
-## 🛠 Công nghệ sử dụng
-- **Ngôn ngữ:** C# (.NET Framework 4.7.2)
-- **Kiến trúc:** 3-Layer (GUI - BUS - DAL)
-- **Database:** SQL Server
-- **Công cụ:** Visual Studio 2022, Git/GitHub
+📌 Mục lục
+🌟 Mở đầu
 
-## 🚀 Hướng dẫn cài đặt
-1. Clone dự án về máy: `git clone https://github.com/DuongDevv/QLShopQuanAo.git`
-2. Mở file `.slnx` bằng Visual Studio.
-3. Chạy các câu lệnh SQL trong file script (nếu có) để khởi tạo Database.
-4. Nhấn **F5** để bắt đầu trải nghiệm!
+🎯 Mục tiêu dự án
 
----
-*Dự án được thực hiện bởi DuongDevv - Sinh viên CNTT Cao đẳng Kỹ thuật Cao Thắng.*
+💻 Công nghệ & Kiến trúc
+
+✨ Tính năng hệ thống
+
+👥 Đội ngũ thực hiện
+
+📝 Tổng kết
+
+I. Mở đầu
+Trong bối cảnh thị trường thời trang đang phát triển mạnh mẽ với nhu cầu tiêu dùng ngày càng cao, việc quản lý thủ công các khâu nhập hàng, tồn kho và doanh thu đã trở nên lạc hậu và dễ gây sai sót.
+
+Để tối ưu hóa quy trình vận hành và nâng cao trải nghiệm khách hàng, em đã quyết định thực hiện đề tài "Xây dựng phần mềm quản lý cửa hàng thời trang". Sản phẩm tập trung vào việc số hóa dữ liệu, giúp chủ cửa hàng kiểm soát dòng tiền và hàng hóa một cách chính xác, nhanh chóng và chuyên nghiệp hơn, đáp ứng tiêu chuẩn công nghệ của thời đại 4.0.
+
+II. Mục tiêu
+Ứng dụng thực tế: Thay thế hình thức quản lý thủ công cồng kềnh, giảm thiểu sai sót đáng kể trong nghiệp vụ kế toán và kho vận.
+
+Trải nghiệm người dùng: Giao diện thân thiện, hiện đại, dễ tiếp cận cho cả chủ cửa hàng và nhân viên.
+
+Tính ổn định: Hoạt động mượt mà trên các hệ điều hành phổ biến (Windows 10/11), dễ dàng bảo trì và nâng cấp mở rộng tính năng về sau.
+
+III. Công nghệ & Kiến trúc
+🛠 Tech Stack
+Ngôn ngữ: C# (.NET Framework)
+
+Giao diện: WinForms / WPF (Tùy chỉnh UI/UX trực quan)
+
+Cấu trúc: 3-Layer Architecture (GUI - BUS - DAL) giúp tách biệt rõ ràng giữa giao diện và xử lý logic, dễ dàng bảo trì.
+
+Database: Microsoft SQL Server (RDBMS chuẩn hóa).
+
+Library: EPPlus (Xuất báo cáo Excel), Bunifu/Guna UI (Design Components).
+
+Quản lý: Git, GitHub.
+
+IV. Tính năng "Sáng giá"
+Hệ thống được thiết kế sát với thực tiễn nghiệp vụ, bao gồm:
+
+✅ Nghiệp vụ Bán hàng: Đăng nhập phân quyền, bán hàng nhanh, in hóa đơn chuyên nghiệp.
+
+📦 Quản lý Kho: Theo dõi sản phẩm, tồn kho tự động, quản lý nhập hàng từ nhà cung cấp.
+
+👥 Quản trị: Quản lý nhân viên (lương, thông tin), quản lý khách hàng thân thiết.
+
+📊 Thống kê: Báo cáo doanh thu, biểu đồ tăng trưởng, gửi thông báo email cho khách hàng.
+
+🛠 Hỗ trợ: Thay đổi/Lấy lại mật khẩu qua Email, gửi thông báo lỗi (đính kèm hình ảnh) trực tiếp đến bộ phận Developer.
+
+V. Tác giả
+Nguyễn Quốc Đương (DuongDev) - Sinh viên CNTT, Cao đẳng Kỹ thuật Cao Thắng.
+
+Giảng viên hướng dẫn: Võ Thị Vân Anh.
