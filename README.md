@@ -1,4 +1,4 @@
-#👕 Quản Lý Shop Thời Trang - Giải Pháp Số Hóa Quy Trình Bán Hàng
+# 👕 Quản Lý Shop Thời Trang - Giải Pháp Số Hóa Quy Trình Bán Hàng
 "Tối ưu vận hành – Chính xác dữ liệu – Nâng tầm trải nghiệm khách hàng."
 
 ## 📌 Mục lục
