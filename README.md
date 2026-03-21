@@ -65,7 +65,7 @@ Hệ thống được thiết kế sát với thực tiễn nghiệp vụ, bao g
 
 * 👥 Quản trị: Quản lý nhân viên (lương, thông tin), quản lý khách hàng thân thiết.
 
-* 📊 Thống kê: Báo cáo doanh thu, biểu đồ tăng trưởng, gửi thông báo email cho khách hàng.
+* 📊 Thống kê: Báo cáo doanh thu, biểu đồ tăng trưởng.
 
 * 🛠 Hỗ trợ: Thay đổi/Lấy lại mật khẩu qua Email, gửi thông báo lỗi (đính kèm hình ảnh) trực tiếp đến bộ phận Developer.
 
@@ -86,7 +86,7 @@ Hệ thống được thiết kế sát với thực tiễn nghiệp vụ, bao g
 ## VI. Tổng kết
 Sản phẩm là kết quả của quá trình nghiên cứu và vận dụng những kiến thức lập trình thực tế. Thông qua đồ án này, em đã làm chủ được quy trình xây dựng phần mềm chuyên nghiệp, từ khâu thiết kế Database đến triển khai mã nguồn sạch (Clean Code).
 
-Dù đã cố gắng hoàn thiện, sản phẩm vẫn có thể còn những điểm cần cải tiến. Tôi luôn trân trọng và mong nhận được mọi ý kiến đóng góp từ thầy cô và các bạn để nâng cấp phần mềm tốt hơn trong tương lai.
+Dù đã cố gắng hoàn thiện, sản phẩm vẫn có thể còn những điểm cần cải tiến. Tôi luôn trân trọng và mong nhận được mọi ý kiến đóng góp từ các bạn để nâng cấp phần mềm tốt hơn trong tương lai.
 
 Trân trọng cảm ơn!
 
