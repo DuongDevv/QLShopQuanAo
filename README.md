@@ -84,9 +84,9 @@ Hệ thống được thiết kế sát với thực tiễn nghiệp vụ, bao g
 <div id="Tongket"></div>
 
 ## VI. Tổng kết
-Sản phẩm là kết quả của quá trình nghiên cứu và vận dụng những kiến thức lập trình thực tế. Thông qua đồ án này, em đã làm chủ được quy trình xây dựng phần mềm chuyên nghiệp, từ khâu thiết kế Database đến triển khai mã nguồn sạch (Clean Code).
+Sản phẩm là kết quả của quá trình nghiên cứu và vận dụng những kiến thức lập trình thực tế. Thông qua đồ án này, tôi đã làm chủ được quy trình xây dựng phần mềm chuyên nghiệp, từ khâu thiết kế Database đến triển khai mã nguồn sạch (Clean Code).
 
-Dù đã cố gắng hoàn thiện, sản phẩm vẫn có thể còn những điểm cần cải tiến. Tôi luôn trân trọng và mong nhận được mọi ý kiến đóng góp từ các bạn để nâng cấp phần mềm tốt hơn trong tương lai.
+Sản phẩm của nhóm có thể còn nhiều thiếu sót trong quá trình xây dựng và phát triển. Vì vậy, đừng ngần ngại gửi những đóng góp hoặc ý kiến của bạn. Mỗi đóng góp của các bạn đều sẽ được ghi nhận và sẽ là động lực để tôi có thể hoàn thiện sản phẩm hơn nữa.
 
 Trân trọng cảm ơn!
 
