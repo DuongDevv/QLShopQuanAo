@@ -107,6 +107,7 @@ namespace QLShopQuanAo.Views.Main.Order
                 f.ChiTietGioHang = this.GioHang_Nhan;
 
                 f.ShowDialog();
+                this.ShowDialog() = DialogResult.OK;
                 this.Close();
             }
             else
