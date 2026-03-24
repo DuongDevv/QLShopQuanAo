@@ -51,7 +51,7 @@ namespace QLShopQuanAo.DAL
 
         public DataTable GetTotalRevenue()
         {
-            string sql = @"SELECT h.MaHD as [Mã Hóa Đơn], h.NgayLap as [Ngày Lập], 
+            string sql = @"SELECT h.MaHD as [Mã Hóa Đơn], FORMAT (h.NgayLap, 'dd/MM/yyy HH:mm' ) as [Ngày Lập], 
                           n.TenNV as [Nhân Viên], k.TenKH as [Khách Hàng], 
                           h.TongTien as [Tổng Tiền]
                    FROM HoaDon h
