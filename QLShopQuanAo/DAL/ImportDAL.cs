@@ -45,7 +45,7 @@ namespace QLShopQuanAo.DAL
                 catch (Exception ex)
                 {
                     trans.Rollback();
-                    MessageBox.Show(ex + Message)
+                    throw ex;
                     return false;
                 }
             }
