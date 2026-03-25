@@ -74,7 +74,8 @@ namespace QLShopQuanAo
 
                         this.Hide();
                         f.ShowDialog();
-                        this.Close();
+
+                        txtPassword.Clear();
                     }
                 }
                 else

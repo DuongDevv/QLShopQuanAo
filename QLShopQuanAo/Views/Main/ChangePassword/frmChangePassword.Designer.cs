@@ -70,7 +70,7 @@
             // 
             // txtCurrentPassword
             // 
-            this.txtCurrentPassword.Location = new System.Drawing.Point(168, 40);
+            this.txtCurrentPassword.Location = new System.Drawing.Point(197, 38);
             this.txtCurrentPassword.Multiline = true;
             this.txtCurrentPassword.Name = "txtCurrentPassword";
             this.txtCurrentPassword.Size = new System.Drawing.Size(171, 22);
@@ -78,7 +78,7 @@
             // 
             // txtConfirmPassword
             // 
-            this.txtConfirmPassword.Location = new System.Drawing.Point(166, 181);
+            this.txtConfirmPassword.Location = new System.Drawing.Point(195, 179);
             this.txtConfirmPassword.Name = "txtConfirmPassword";
             this.txtConfirmPassword.Size = new System.Drawing.Size(171, 22);
             this.txtConfirmPassword.TabIndex = 4;
@@ -86,7 +86,7 @@
             // 
             // txtNewPassword
             // 
-            this.txtNewPassword.Location = new System.Drawing.Point(168, 109);
+            this.txtNewPassword.Location = new System.Drawing.Point(197, 107);
             this.txtNewPassword.Name = "txtNewPassword";
             this.txtNewPassword.Size = new System.Drawing.Size(171, 22);
             this.txtNewPassword.TabIndex = 5;

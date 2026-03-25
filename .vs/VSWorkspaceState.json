@@ -2,8 +2,12 @@
   "ExpandedNodes": [
     "",
     "\\QLShopQuanAo",
+    "\\QLShopQuanAo\\BUS",
+    "\\QLShopQuanAo\\DAL",
     "\\QLShopQuanAo\\Views",
-    "\\QLShopQuanAo\\Views\\Main"
+    "\\QLShopQuanAo\\Views\\Auth",
+    "\\QLShopQuanAo\\Views\\Main",
+    "\\QLShopQuanAo\\Views\\Main\\Order"
   ],
   "SelectedNode": "\\QLShopQuanAo.slnx",
   "PreviewInSolutionExplorer": false

@@ -46,7 +46,7 @@ namespace QLShopQuanAo.Views.Main
         }
         private void frmMain_Load(object sender, EventArgs e)
         {
-            LoadComboBoxLoaiSP(); 
+            LoadComboBoxLoaiSP();
 
             LoadDataNhanVien();
 
@@ -75,13 +75,15 @@ namespace QLShopQuanAo.Views.Main
             LoadPieChartData();
 
             AccessControl(this.ChucVu_DangNhap);
+
+            timerClock.Start();
         }
 
         //Điều hướng
         private void ShowPage(Panel targetPanel)
         {
             pnHome.Visible = pnStaff.Visible = pnProduct.Visible =
-            pnCustomer.Visible = pnOrderProduct.Visible = pnInformationProduct.Visible = pnStaffAccountInformation.Visible =  false;
+            pnCustomer.Visible = pnOrderProduct.Visible = pnInformationProduct.Visible = pnStaffAccountInformation.Visible = false;
 
             targetPanel.Visible = true;
             targetPanel.Dock = DockStyle.Fill;
@@ -141,7 +143,7 @@ namespace QLShopQuanAo.Views.Main
         {
             dgvStaff.DataSource = nvBUS.LoadStaff();
         }
-     
+
         private void btnReset_Click(object sender, EventArgs e)
         {
             txtIDStaff.Clear();
@@ -228,11 +230,11 @@ namespace QLShopQuanAo.Views.Main
             if (nvBUS.AddStaff(nv))
             {
                 MessageBox.Show("Thêm thành công!");
-                LoadDataNhanVien(); 
+                LoadDataNhanVien();
                 btnReset_Click(sender, e);
             }
         }
-       
+
         private void btnUpdateStaff_Click(object sender, EventArgs e)
         {
 
@@ -329,7 +331,7 @@ namespace QLShopQuanAo.Views.Main
                 LoadDataNhanVien();
                 btnReset_Click(sender, e);
             }
-        
+
         }
 
         private void FilterNhanVien()
@@ -506,8 +508,8 @@ namespace QLShopQuanAo.Views.Main
 
             try
             {
-                if(khBUS.AddCustomer(kh)) {
-                    MessageBox.Show("Thêm khách hàng thành công!","Thông báo",
+                if (khBUS.AddCustomer(kh)) {
+                    MessageBox.Show("Thêm khách hàng thành công!", "Thông báo",
                         MessageBoxButtons.OK);
                     LoadDataKhachHang();
                     btnResetCustomer_Click(sender, e);
@@ -518,7 +520,7 @@ namespace QLShopQuanAo.Views.Main
                 if (ex.Number == 2627) MessageBox.Show("Số điện thoại này đã được đăng ký!");
                 else MessageBox.Show("Lỗi: " + ex.Message);
             }
-            
+
         }
 
         private void dgvCustomer_CellClick(object sender, DataGridViewCellEventArgs e)
@@ -556,14 +558,14 @@ namespace QLShopQuanAo.Views.Main
                 return;
             }
 
-            if (!IsValidEmail(kh.Email)) 
-            { 
-                MessageBox.Show("Email sai định dạng!"); 
-                return; 
+            if (!IsValidEmail(kh.Email))
+            {
+                MessageBox.Show("Email sai định dạng!");
+                return;
             }
             if (!IsValidPhone(kh.SDT)) {
-                MessageBox.Show("SĐT phải đủ 10 số!"); 
-                return; 
+                MessageBox.Show("SĐT phải đủ 10 số!");
+                return;
             }
 
             try
@@ -594,14 +596,14 @@ namespace QLShopQuanAo.Views.Main
             if (dr == DialogResult.Yes)
             {
                 int id = int.Parse(txtIDCustomer.Text);
-                
+
                 try
                 {
                     if (khBUS.RemoveCustomer(id))
                     {
                         MessageBox.Show("Đã xóa khách hàng thành công!");
                         LoadDataKhachHang();
-                        btnResetCustomer_Click(sender, e); 
+                        btnResetCustomer_Click(sender, e);
                     }
                     else
                     {
@@ -704,7 +706,7 @@ namespace QLShopQuanAo.Views.Main
         {
             if (string.IsNullOrWhiteSpace(txtIDProduct.Text))
             {
-                MessageBox.Show("Vui lòng chọn sản phẩm cần sửa!","Thông báo",
+                MessageBox.Show("Vui lòng chọn sản phẩm cần sửa!", "Thông báo",
                     MessageBoxButtons.OK);
                 return;
             }
@@ -724,7 +726,7 @@ namespace QLShopQuanAo.Views.Main
                 if (spBUS.UpdateProduct(sp))
                 {
                     MessageBox.Show("Cập nhật sản phẩm thành công!", "Thông báo");
-                    LoadDataSanPham(); 
+                    LoadDataSanPham();
                 }
                 else
                 {
@@ -767,7 +769,7 @@ namespace QLShopQuanAo.Views.Main
             if (spBUS.ChangeStatus(id, status))
             {
                 MessageBox.Show(message, "Thông báo");
-                LoadDataSanPham(); 
+                LoadDataSanPham();
             }
             else
             {
@@ -842,7 +844,7 @@ namespace QLShopQuanAo.Views.Main
             {
                 if (spBUS.AddProduct(sp))
                 {
-                    MessageBox.Show("Thêm sản phẩm thành công!","Thông báo",
+                    MessageBox.Show("Thêm sản phẩm thành công!", "Thông báo",
                         MessageBoxButtons.OK);
                     LoadDataSanPham();
                     btnResetProduct_Click(sender, e);
@@ -864,11 +866,11 @@ namespace QLShopQuanAo.Views.Main
                 cboTypeProduct.DisplayMember = "TenLoaiSP";
                 cboTypeProduct.ValueMember = "MaLoai";
 
-                DataTable dtSearch = dt.Copy(); 
+                DataTable dtSearch = dt.Copy();
                 cboSearchTypeProduct.DataSource = dtSearch;
                 cboSearchTypeProduct.DisplayMember = "TenLoaiSP";
                 cboSearchTypeProduct.ValueMember = "MaLoai";
-                cboSearchTypeProduct.SelectedIndex = -1; 
+                cboSearchTypeProduct.SelectedIndex = -1;
             }
             catch (Exception ex) { MessageBox.Show("Lỗi nạp loại SP: " + ex.Message); }
         }
@@ -905,7 +907,7 @@ namespace QLShopQuanAo.Views.Main
         }
         private void LoadDataSanPhamChoBanHang()
         {
-             dgvProductsOrder.DataSource = spBUS.LoadProductActive();
+            dgvProductsOrder.DataSource = spBUS.LoadProductActive();
         }
 
         private void TinhTongTien()
@@ -936,7 +938,7 @@ namespace QLShopQuanAo.Views.Main
         {
             FilterOrderProduct();
         }
-        
+
         private void btnCancelOrder_Click(object sender, EventArgs e)
         {
             if (MessageBox.Show("Bạn muốn xóa toàn bộ giỏ hàng?", "Hủy đơn",
@@ -974,7 +976,7 @@ namespace QLShopQuanAo.Views.Main
             fPay.TenKH_Nhan = cboCustomerOrder.Text;
             fPay.MaNV_Nhan = this.MaNV_DangNhap;
             fPay.TenNV_Nhan = this.TenNV_DangNhap;
-            fPay.GioHang_Nhan = this.cartTable; 
+            fPay.GioHang_Nhan = this.cartTable;
 
             decimal tong = 0;
             foreach (DataRow r in cartTable.Rows) tong += Convert.ToDecimal(r["ThanhTien"]);
@@ -1074,21 +1076,21 @@ namespace QLShopQuanAo.Views.Main
         private void btnImportProduct_Click(object sender, EventArgs e)
         {
             if (selectedMaNCC == -1)
-            { 
-                MessageBox.Show("Vui lòng chọn Nhà cung cấp!","Thông báo",
-                    MessageBoxButtons.OK); 
+            {
+                MessageBox.Show("Vui lòng chọn Nhà cung cấp!", "Thông báo",
+                    MessageBoxButtons.OK);
                 return;
             }
-            if (string.IsNullOrEmpty(txtImportProductID.Text)) 
-            { 
-                MessageBox.Show("Vui lòng chọn sản phẩm!","Thông báo",
-                    MessageBoxButtons.OK); 
+            if (string.IsNullOrEmpty(txtImportProductID.Text))
+            {
+                MessageBox.Show("Vui lòng chọn sản phẩm!", "Thông báo",
+                    MessageBoxButtons.OK);
                 return;
             }
             if (string.IsNullOrEmpty(txtImportPrice.Text) || string.IsNullOrEmpty(txtImportQuantity.Text))
             {
                 MessageBox.Show("Vui lòng nhập giá và số lượng!", "Thông báo",
-                    MessageBoxButtons.OK); 
+                    MessageBoxButtons.OK);
                 return;
             }
 
@@ -1114,7 +1116,7 @@ namespace QLShopQuanAo.Views.Main
                     MessageBox.Show("Lỗi nhập hàng, vui lòng kiểm tra lại hệ thống!");
                 }
             }
-            catch (Exception ex) 
+            catch (Exception ex)
             {
                 MessageBox.Show("Lỗi nhập hàng: " + ex.Message);
             }
@@ -1158,16 +1160,20 @@ namespace QLShopQuanAo.Views.Main
         {
             try
             {
-            label60.Text = rptBUS.LayHangSapHet();
-            label58.Text = rptBUS.LayKhachMoi();
-            label57.Text = rptBUS.LayDonHangMoi();
-            label55.Text = rptBUS.LayDoanhThu();
-            dgvTopProducts.DataSource = rptBUS.GetTopProduct();
+                label60.Text = rptBUS.LayHangSapHet();
+                label58.Text = rptBUS.LayKhachMoi();
+                label57.Text = rptBUS.LayDonHangMoi();
+                label55.Text = rptBUS.LayDoanhThu();
+                dgvTopProducts.DataSource = rptBUS.GetTopProduct();
             }
             catch (Exception ex)
             {
                 Console.WriteLine("Lỗi cập nhật Dashboard: " + ex.Message);
             }
+        }
+        private void timerClock_Tick(object sender, EventArgs e)
+        {
+            label62.Text = DateTime.Now.ToString("dd/MM/yyyy HH:mm:ss");
         }
 
         private void LoadPieChartData()
@@ -1192,6 +1198,118 @@ namespace QLShopQuanAo.Views.Main
             }
         }
 
+        private void ExportDataTableToExcel(DataTable dt, string fileName)
+        {
+            using (SaveFileDialog sfd = new SaveFileDialog())
+            {
+                sfd.Filter = "Excel Workbook|*.xlsx";
+                sfd.FileName = fileName + "_" + DateTime.Now.ToString("yyyyMMdd");
+
+                if (sfd.ShowDialog() == DialogResult.OK)
+                {
+                    using (ExcelPackage pck = new ExcelPackage())
+                    {
+                        ExcelWorksheet ws = pck.Workbook.Worksheets.Add("DoanhThu");
+
+                        //Đổ Header từ cột của DataTable
+                        for (int i = 0; i < dt.Columns.Count; i++)
+                        {
+                            var cell = ws.Cells[1, i + 1];
+                            cell.Value = dt.Columns[i].ColumnName;
+                            cell.Style.Font.Bold = true;
+                            cell.Style.Fill.PatternType = ExcelFillStyle.Solid;
+                            cell.Style.Fill.BackgroundColor.SetColor(Color.Green);
+                            cell.Style.Font.Color.SetColor(Color.White);
+                        }
+
+                        //Đổ dữ liệu từ DataTable vào Excel (LoadFromDataTable là hàm cực nhanh của EPPlus)
+                        ws.Cells["A2"].LoadFromDataTable(dt, false);
+                        int rowCount = dt.Rows.Count + 1;
+                        for (int i = 2; i <= rowCount; i++)
+                        {
+                            string cellValue = ws.Cells[i, 3].Text;
+
+                            if (cellValue.Contains("--- TỔNG"))
+                            {
+                                ws.Row(i).Style.Fill.PatternType = ExcelFillStyle.Solid;
+                                ws.Row(i).Style.Font.Bold = true;
+                                ws.Row(i).Style.Font.Color.SetColor(Color.Blue);
+                            }
+                        }
+
+                        //Định dạng cột tiền tệ cho cột cuối cùng (Tổng Tiền)
+                        int lastCol = dt.Columns.Count;
+                        ws.Column(lastCol).Style.Numberformat.Format = "#,##0";
+
+                        ws.Cells.AutoFitColumns();
+                        File.WriteAllBytes(sfd.FileName, pck.GetAsByteArray());
+
+                        MessageBox.Show("Đã xuất toàn bộ báo cáo doanh thu!", "Thành công");
+                        System.Diagnostics.Process.Start(sfd.FileName);
+                    }
+                }
+            }
+        }
+
+        private void btnExportExcel_Click(object sender, EventArgs e)
+        {
+            DataTable dtDoanhThu = rptBUS.GetTotalRevenue();
+
+            if (dtDoanhThu.Rows.Count > 0)
+            {
+                DataTable dtDaCoTong = InsertDailyTotalRevenue(dtDoanhThu);
+
+                //Xuất ra file
+                ExportDataTableToExcel(dtDaCoTong, "Bao_Cao_Tong_Hop_Doanh_Thu");
+            }
+            else
+            {
+                MessageBox.Show("Chưa có dữ liệu hóa đơn nào để xuất!");
+            }
+        }
+
+        private DataTable InsertDailyTotalRevenue(DataTable dtDoanhThu)
+        {
+            DataTable dtResult = dtDoanhThu.Clone();
+            if (dtDoanhThu.Rows.Count == 0 || dtDoanhThu == null) return dtResult;
+
+            decimal totalSameDay = 0;
+            // Lấy ngày của dòng ĐẦU TIÊN (Index 0) để làm mốc so sánh
+            string today = dtDoanhThu.Rows[0]["Ngày Lập"].ToString().Substring(0, 10);
+
+            for (int i = 0; i < dtDoanhThu.Rows.Count; i++)
+            {
+                // Thống nhất tên cột là "Ngày Lập"
+                string dateRow = dtDoanhThu.Rows[i]["Ngày Lập"].ToString().Substring(0, 10);
+                decimal amount = Convert.ToDecimal(dtDoanhThu.Rows[i]["Tổng Tiền"]);
+
+                // Nếu phát hiện đổi sang ngày khác -> Chèn dòng tổng của ngày cũ
+                if (dateRow != today)
+                {
+                    DataRow totalRow = dtResult.NewRow();
+                    totalRow["Nhân Viên"] = "--- TỔNG NGÀY " + today + " ---";
+                    totalRow["Tổng Tiền"] = totalSameDay;
+                    dtResult.Rows.Add(totalRow);
+
+                    // Reset mốc cho ngày mới
+                    totalSameDay = 0;
+                    today = dateRow;
+                }
+
+                dtResult.ImportRow(dtDoanhThu.Rows[i]);
+                totalSameDay += amount;
+
+                // Nếu là dòng cuối cùng của cả bảng -> Chèn nốt tổng của ngày cuối
+                if (i == dtDoanhThu.Rows.Count - 1)
+                {
+                    DataRow totalLastRow = dtResult.NewRow();
+                    totalLastRow["Nhân Viên"] = "--- TỔNG NGÀY " + today + " ---";
+                    totalLastRow["Tổng Tiền"] = totalSameDay;
+                    dtResult.Rows.Add(totalLastRow);
+                }
+            }
+            return dtResult;
+        }
 
 
 
@@ -1209,6 +1327,11 @@ namespace QLShopQuanAo.Views.Main
                     txtPositionAccount.Text = r["ChucVu"].ToString();
                     txtAccountUsername.Text = r["TenTK"].ToString();
                     txtAccountPassword.Text = r["MatKhau"].ToString();
+
+                    txtAccountPassword.UseSystemPasswordChar = true;
+                    chkShowPassword.Checked = false;
+                    txtAccountPassword.Refresh();
+
 
                     // Xử lý hiển thị ảnh tương tự như cũ nhưng dùng r["HinhAnh"]
                     string fileName = r["HinhAnh"].ToString();
@@ -1232,17 +1355,7 @@ namespace QLShopQuanAo.Views.Main
         
         }
 
-        private void chkShowPassword_CheckedChanged(object sender, EventArgs e)
-        {
-            if (chkShowPassword.Checked == true)
-            {
-                txtAccountPassword.UseSystemPasswordChar = true;
-            }
-            else
-            {
-                txtAccountPassword.UseSystemPasswordChar = false;
-            }
-        }
+ 
 
         private void btnChangePassword_Click(object sender, EventArgs e)
         {
@@ -1251,18 +1364,7 @@ namespace QLShopQuanAo.Views.Main
             f.ShowDialog();
         }
 
-        private void chkShowPassword_CheckStateChanged(object sender, EventArgs e)
-        {
-            if (chkShowPassword.Checked == true)
-            {
-                txtAccountPassword.UseSystemPasswordChar = false;
-            }
-            else
-            {
-                txtAccountPassword.UseSystemPasswordChar = true;
-            }
-        }
-
+        
 
 
         //Phân quyền giữ nhân viên và Quản lí khi đăng nhập
@@ -1275,6 +1377,7 @@ namespace QLShopQuanAo.Views.Main
                 btnCustomer.Visible = false;     
                 btnStaff.Visible = false;
                 btnInsertProduct.Visible = false;
+                btnExportExcel.Visible = false;
 
             }
             else
@@ -1286,135 +1389,17 @@ namespace QLShopQuanAo.Views.Main
             }
         }
 
-
-        //Xuất file exel báo cáo
-        private void ExportToExcel(DataGridView dgv, string fileName)
+        private void chkShowPassword_CheckedChanged(object sender, EventArgs e)
         {
-            using (SaveFileDialog sfd = new SaveFileDialog())
+            if (chkShowPassword.Checked==true)
             {
-                sfd.Filter = "Excel Workbook|*.xlsx";
-                sfd.FileName = fileName + "_" + DateTime.Now.ToString("ddMMyyyy");
-
-                if (sfd.ShowDialog() == DialogResult.OK)
-                {
-                    try
-                    {
-                        using (ExcelPackage pck = new ExcelPackage())
-                        {
-                            // Tạo một Sheet mới đặt tên là "Báo Cáo"
-                            ExcelWorksheet ws = pck.Workbook.Worksheets.Add("BaoCao");
-
-                            //Xuất Tiêu đề cột (Header)
-                            int colIndex = 1;
-                            for (int i = 0; i < dgv.Columns.Count; i++)
-                            {
-                                //Bỏ qua các cột ẩn hoặc cột chứa hình ảnh
-                                if (dgv.Columns[i].Visible && !(dgv.Columns[i] is DataGridViewImageColumn))
-                                {
-                                    var cell = ws.Cells[1, colIndex];
-                                    cell.Value = dgv.Columns[i].HeaderText;
-
-                                    // Style cho Header: Chữ đậm, nền xanh dương, chữ trắng
-                                    cell.Style.Font.Bold = true;
-                                    cell.Style.Fill.PatternType = ExcelFillStyle.Solid;
-                                    cell.Style.Fill.BackgroundColor.SetColor(Color.FromArgb(0, 102, 204));
-                                    cell.Style.Font.Color.SetColor(Color.White);
-                                    cell.Style.HorizontalAlignment = ExcelHorizontalAlignment.Center;
-
-                                    colIndex++;
-                                }
-                            }
-
-                            //Xuất dữ liệu từ các dòng (Rows)
-                            for (int r = 0; r < dgv.Rows.Count; r++)
-                            {
-                                int excelCol = 1;
-                                for (int c = 0; c < dgv.Columns.Count; c++)
-                                {
-                                    if (dgv.Columns[c].Visible && !(dgv.Columns[c] is DataGridViewImageColumn))
-                                    {
-                                        ws.Cells[r + 2, excelCol].Value = dgv.Rows[r].Cells[c].Value;
-
-                                        // Kẻ khung (Border) cho từng ô dữ liệu
-                                        ws.Cells[r + 2, excelCol].Style.Border.BorderAround(ExcelBorderStyle.Thin);
-                                        excelCol++;
-                                    }
-                                }
-                            }
-
-                            //Tự động căn chỉnh độ rộng cột cho vừa nội dung
-                            ws.Cells.AutoFitColumns();
-
-                            //Lưu file và thông báo
-                            File.WriteAllBytes(sfd.FileName, pck.GetAsByteArray());
-                            MessageBox.Show("Export thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
-
-                            //Mở file ngay sau khi xuất (Tùy chọn)
-                            System.Diagnostics.Process.Start(sfd.FileName);
-                        }
-                    }
-                    catch (Exception ex)
-                    {
-                        MessageBox.Show("Lỗi: " + ex.Message, "Lỗi xuất file");
-                    }
-                }
-            }
-        }
-
-        private void ExportDataTableToExcel(DataTable dt, string fileName)
-        {
-            using (SaveFileDialog sfd = new SaveFileDialog())
-            {
-                sfd.Filter = "Excel Workbook|*.xlsx";
-                sfd.FileName = fileName + "_" + DateTime.Now.ToString("yyyyMMdd");
-
-                if (sfd.ShowDialog() == DialogResult.OK)
-                {
-                    using (ExcelPackage pck = new ExcelPackage())
-                    {
-                        ExcelWorksheet ws = pck.Workbook.Worksheets.Add("DoanhThu");
-
-                        // 1. Đổ Header từ cột của DataTable
-                        for (int i = 0; i < dt.Columns.Count; i++)
-                        {
-                            var cell = ws.Cells[1, i + 1];
-                            cell.Value = dt.Columns[i].ColumnName;
-                            cell.Style.Font.Bold = true;
-                            cell.Style.Fill.PatternType = ExcelFillStyle.Solid;
-                            cell.Style.Fill.BackgroundColor.SetColor(Color.Green);
-                            cell.Style.Font.Color.SetColor(Color.White);
-                        }
-
-                        // 2. Đổ dữ liệu từ DataTable vào Excel (LoadFromDataTable là hàm cực nhanh của EPPlus)
-                        ws.Cells["A2"].LoadFromDataTable(dt, false);
-
-                        // 3. Định dạng cột tiền tệ cho cột cuối cùng (Tổng Tiền)
-                        int lastCol = dt.Columns.Count;
-                        ws.Column(lastCol).Style.Numberformat.Format = "#,##0";
-
-                        ws.Cells.AutoFitColumns();
-                        File.WriteAllBytes(sfd.FileName, pck.GetAsByteArray());
-
-                        MessageBox.Show("Đã xuất toàn bộ báo cáo doanh thu!", "Thành công");
-                        System.Diagnostics.Process.Start(sfd.FileName);
-                    }
-                }
-            }
-        }
-
-        private void btnExportExcel_Click(object sender, EventArgs e)
-        {
-            DataTable dtDoanhThu = rptBUS.GetTotalRevenue();
-
-            if (dtDoanhThu.Rows.Count > 0)
-            {
-                // 2. Xuất ra file
-                ExportDataTableToExcel(dtDoanhThu, "Bao_Cao_Tong_Hop_Doanh_Thu");
+                txtAccountPassword.UseSystemPasswordChar = false; 
             }
             else
             {
-                MessageBox.Show("Chưa có dữ liệu hóa đơn nào để xuất!");
+                txtAccountPassword.UseSystemPasswordChar = true; 
             }
+            txtAccountPassword.UseSystemPasswordChar = !chkShowPassword.Checked;
         }
     }
 }
