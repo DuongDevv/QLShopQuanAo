@@ -1062,8 +1062,9 @@ namespace QLShopQuanAo.Views.Main
             if (e.RowIndex >= 0)
             {
                 DataGridViewRow r = dgvProductList.Rows[e.RowIndex];
-                txtImportProductID.Text = r.Cells["MaSP"].Value.ToString();
-                txtImportProductName.Text = r.Cells["TenSP"].Value.ToString();
+                txtImportProductID.Text = r.Cells["Mã SP"].Value.ToString();
+                txtImportProductName.Text = r.Cells["Tên SP"].Value.ToString();
+                txtImportPrice.Text = r.Cells["Đơn giá"].Value.ToString();
             }
         }
 
@@ -1110,6 +1111,8 @@ namespace QLShopQuanAo.Views.Main
                 {
                     MessageBox.Show("Nhập kho thành công!");
                     LoadDataChoNhapHang();
+                    txtImportQuantity.Clear();
+                    txtImportPrice.Clear();
                 }
                 else
                 {

@@ -42,9 +42,10 @@ namespace QLShopQuanAo.DAL
                     trans.Commit();
                     return true;
                 }
-                catch
+                catch (Exception ex)
                 {
                     trans.Rollback();
+                    throw ex;
                     return false;
                 }
             }

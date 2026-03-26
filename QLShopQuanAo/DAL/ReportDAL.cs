@@ -36,7 +36,7 @@ namespace QLShopQuanAo.DAL
         {
             DataTable dt = DataHelper.GetDataTable("SELECT SUM(TongTien) FROM HoaDon WHERE CAST(NgayLap AS DATE) = CAST(GETDATE() AS DATE)");
             object rev = dt.Rows[0][0];
-            return rev != DBNull.Value ? Convert.ToDecimal(rev).ToString("#,##0") + " đ" : "0 đ";
+            return rev != DBNull.Value ? Convert.ToDecimal(rev).ToString("#,###,###,##0") + " đ" : "0 đ";
         }
 
         public DataTable GetCategoryRevenue()
