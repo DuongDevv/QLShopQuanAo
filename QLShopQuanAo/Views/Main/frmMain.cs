@@ -1,4 +1,7 @@
-﻿using QLShopQuanAo.Views.Main.ChangePassword;
+﻿using OfficeOpenXml; 
+using OfficeOpenXml.Style; 
+using QLShopQuanAo.DTO;
+using QLShopQuanAo.Views.Main.ChangePassword;
 using QLShopQuanAo.Views.Main.Order;
 using System;
 using System.Collections.Generic;
@@ -6,15 +9,13 @@ using System.ComponentModel;
 using System.Data;
 using System.Data.SqlClient;
 using System.Drawing;
+using System.IO; 
 using System.Linq;
 using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Xml.Linq;
-using OfficeOpenXml; 
-using OfficeOpenXml.Style; 
-using System.IO; 
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.ListView;
 namespace QLShopQuanAo.Views.Main
 {
@@ -25,6 +26,7 @@ namespace QLShopQuanAo.Views.Main
         BUS.ProductBUS spBUS = new BUS.ProductBUS();
         BUS.ReportBUS rptBUS = new BUS.ReportBUS();
         BUS.ImportBUS ipBUS = new BUS.ImportBUS();
+        BUS.AccountBUS accBUS = new BUS.AccountBUS();
 
         public string ChucVu_DangNhap { get; set; }
         public int MaNV_DangNhap { get; set; }
@@ -179,6 +181,14 @@ namespace QLShopQuanAo.Views.Main
                 return;
             }
 
+            if (string.IsNullOrWhiteSpace(txtStaffUser.Text))
+            {
+                MessageBox.Show("Vui lòng nhập tên Tài khoản!", "Thông báo",
+                    MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                txtNameStaff.Focus();
+                return;
+            }
+
             if (string.IsNullOrWhiteSpace(nv.Email))
             {
                 MessageBox.Show("Vui lòng nhập Email!", "Thông báo",
@@ -225,14 +235,33 @@ namespace QLShopQuanAo.Views.Main
                 return;
             }
 
+            int newMaNV = nvBUS.AddStaff(nv);
 
-
-            if (nvBUS.AddStaff(nv))
+            if (newMaNV > 0) // Kiểm tra nếu ID trả về hợp lệ
             {
-                MessageBox.Show("Thêm thành công!");
-                LoadDataNhanVien();
-                btnReset_Click(sender, e);
+                // Tạo tài khoản mới sử dụng AccountBUS và AccountDTO đã tạo ở file mới
+                AccountDTO newAcc = new AccountDTO(txtStaffUser.Text, txtStaffPassword.Text, newMaNV, cboPositionStaff.Text);
+
+                string resultAcc = accBUS.CreateAccount(newAcc);
+
+                if (resultAcc == "OK")
+                {
+                    MessageBox.Show("Thêm nhân viên và tài khoản thành công!", "Thông báo");
+                    LoadDataNhanVien();
+                    btnReset_Click(sender, e);
+                }
+                else
+                {
+                    MessageBox.Show("Nhân viên đã tạo nhưng lỗi tài khoản: " + resultAcc);
+                }
             }
+            else
+            {
+                MessageBox.Show("Thêm nhân viên thất bại!");
+            }
+
+
+
         }
 
         private void btnUpdateStaff_Click(object sender, EventArgs e)
@@ -289,6 +318,18 @@ namespace QLShopQuanAo.Views.Main
                 txtPhoneNumberStaff.Text = row.Cells["SĐT"].Value.ToString();
                 txtEmailStaff.Text = row.Cells["Email"].Value.ToString();
                 cboPositionStaff.Text = row.Cells["Chức Vụ"].Value.ToString();
+                int maNV = Convert.ToInt32(txtIDStaff.Text);
+                DataTable dtAcc = accBUS.GetAccountDetails(maNV);
+                if (dtAcc.Rows.Count > 0)
+                {
+                    txtStaffUser.Text = dtAcc.Rows[0]["TenTK"].ToString();
+                    txtStaffPassword.Text = dtAcc.Rows[0]["MatKhau"].ToString();
+                }
+                else
+                {
+                    txtStaffUser.Clear();
+                    txtStaffPassword.Clear();
+                }
 
                 picAvatarStaff.Image?.Dispose();
                 picAvatarStaff.Image = null;
@@ -1331,9 +1372,9 @@ namespace QLShopQuanAo.Views.Main
                     txtAccountUsername.Text = r["TenTK"].ToString();
                     txtAccountPassword.Text = r["MatKhau"].ToString();
 
+                    txtAccountPassword.Refresh();
                     txtAccountPassword.UseSystemPasswordChar = true;
                     chkShowPassword.Checked = false;
-                    txtAccountPassword.Refresh();
 
 
                     // Xử lý hiển thị ảnh tương tự như cũ nhưng dùng r["HinhAnh"]
@@ -1394,16 +1435,15 @@ namespace QLShopQuanAo.Views.Main
 
         private void chkShowPassword_CheckedChanged(object sender, EventArgs e)
         {
-            if (chkShowPassword.Checked==true)
-            {
-                txtAccountPassword.UseSystemPasswordChar = false; 
-            }
-            else
-            {
-                txtAccountPassword.UseSystemPasswordChar = true; 
-            }
             txtAccountPassword.UseSystemPasswordChar = !chkShowPassword.Checked;
         }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+
     }
 }
 

@@ -10,7 +10,7 @@ namespace QLShopQuanAo.DAL
 {
     public class OrderDetailDAL
     {
-        //Hàm lưu chi tiết hóa đơn (Lưu từng món hàng một)
+        //Hàm lưu chi tiết hóa đơn (Lưu từng món hàng một)áds
         public static bool InsertOrderDetail(int maHD, int maSP, int soLuong, decimal donGia)
         {
             string sql = "INSERT INTO ChiTietHoaDon(MaHD, MaSP, SoLuong, DonGia) VALUES(@mahd, @masp, @sl, @dg)";

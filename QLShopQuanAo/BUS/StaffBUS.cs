@@ -8,24 +8,14 @@ namespace QLShopQuanAo.BUS
     {
         StaffDAL dal = new StaffDAL();
 
-        public bool CheckLogin(string user, string pass)
-        {
-            return dal.CheckLogin(user, pass);
-        }
-
-        public StaffDTO GetInfo(string tenTK)
-        {
-            return dal.GetInfo(tenTK);
-        }
-
         public DataTable LoadStaff()
         {
             return dal.GetAll();
         }
 
-        public bool AddStaff(StaffDTO nv)
+        public int AddStaff(StaffDTO nv)
         {
-            return dal.Insert(nv);
+            return dal.InsertAndGetID(nv);
         }
 
         public bool UpdateStaff(StaffDTO nv)
@@ -46,5 +36,7 @@ namespace QLShopQuanAo.BUS
         {
            return dal.GetStaffInfo(id);
         }
+
+       
     }
 }

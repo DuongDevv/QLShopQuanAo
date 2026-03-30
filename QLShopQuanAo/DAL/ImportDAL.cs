@@ -46,7 +46,6 @@ namespace QLShopQuanAo.DAL
                 {
                     trans.Rollback();
                     throw ex;
-                    return false;
                 }
             }
         }

@@ -53,12 +53,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BUS\AccountBUS.cs" />
     <Compile Include="BUS\CustomerBUS.cs" />
     <Compile Include="BUS\ImportBUS.cs" />
     <Compile Include="BUS\OrderBUS.cs" />
     <Compile Include="BUS\ProductBUS.cs" />
     <Compile Include="BUS\ReportBUS.cs" />
     <Compile Include="BUS\StaffBUS.cs" />
+    <Compile Include="DAL\AccountDAL.cs" />
     <Compile Include="DAL\CustomerDAL.cs" />
     <Compile Include="DAL\DataHelper.cs" />
     <Compile Include="DAL\ImportDAL.cs" />
@@ -67,6 +69,7 @@
     <Compile Include="DAL\ProductDAL.cs" />
     <Compile Include="DAL\ReportDAL.cs" />
     <Compile Include="DAL\StaffDAL.cs" />
+    <Compile Include="DTO\AccountDTO.cs" />
     <Compile Include="DTO\CustomerDTO.cs" />
     <Compile Include="DTO\ImportDTO.cs" />
     <Compile Include="DTO\OrderDetailDTO.cs" />

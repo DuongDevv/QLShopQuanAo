@@ -16,6 +16,9 @@ namespace QLShopQuanAo
 {
     public partial class frmLogin : Form
     {
+
+        StaffBUS staffBUS = new StaffBUS();
+        AccountBUS accBUS = new AccountBUS();
         public frmLogin()
         {
             InitializeComponent();
@@ -55,13 +58,12 @@ namespace QLShopQuanAo
                 return;
             }
 
-            BUS.StaffBUS staffBUS = new BUS.StaffBUS();
             try
             {
-                if (staffBUS.CheckLogin(acc, pass))
+                if (accBUS.Login(acc, pass))
                 {
                     // Nếu đúng, lấy toàn bộ thông tin (MaNV, ChucVu...)
-                    DTO.StaffDTO info = staffBUS.GetInfo(acc);
+                    DTO.StaffDTO info = accBUS.GetAccountInfo(acc);
 
                     if (info != null)
                     {

@@ -7,47 +7,15 @@ namespace QLShopQuanAo.DAL
 {
     public class StaffDAL
     {
-        public bool CheckLogin(string user, string pass)
-        {
-            string sql = "SELECT COUNT(*) FROM TaiKhoan WHERE TenTK = @user AND MatKhau = @pass";
-            SqlParameter[] pars = {
-            new SqlParameter("@user", user),
-            new SqlParameter("@pass", pass)
-        };
-            int count = (int)DataHelper.ExecuteScalar(sql, pars);
-            return count > 0;
-        }
-
-        public StaffDTO GetInfo(string tenTK)
-        {
-            string sql = @"SELECT t.MaNV, n.TenNV, n.ChucVu 
-               FROM TaiKhoan t 
-               JOIN NhanVien n ON t.MaNV = n.MaNV 
-               WHERE t.TenTK = @user";
-            SqlParameter[] pars = { new SqlParameter("@user", tenTK) };
-            DataTable dt = DataHelper.GetDataTable(sql, pars);
-
-            if (dt.Rows.Count > 0)
-            {
-                return new StaffDTO
-                {
-                    MaNV = Convert.ToInt32(dt.Rows[0]["MaNV"]),
-                    ChucVu = dt.Rows[0]["ChucVu"].ToString(),
-                    TenNV = dt.Rows[0]["TenNV"].ToString()
-                };
-            }
-            return null;
-        }
-
         public DataTable GetAll()
         {
             string sql = "SELECT MaNV AS 'Mã NV', TenNV AS 'Tên NV', GioiTinh AS 'Giới Tính', NgaySinh AS 'Ngày Sinh', SDT AS 'SĐT', Email, ChucVu AS 'Chức Vụ', TrangThai as 'Trạng Thái', HinhAnh as 'Hình Ảnh' FROM NhanVien";
             return DataHelper.GetDataTable(sql);
         }
 
-        public bool Insert(StaffDTO nv)
+        public int InsertAndGetID(StaffDTO nv)
         {
-            string sql = "INSERT INTO NhanVien (TenNV, GioiTinh, NgaySinh, SDT, Email, ChucVu, HinhAnh) VALUES (@Ten, @Gioi, @Ngay, @SDT, @Email, @CV, @Hinh)";
+            string sql = "INSERT INTO NhanVien (TenNV, GioiTinh, NgaySinh, SDT, Email, ChucVu, HinhAnh) VALUES (@Ten, @Gioi, @Ngay, @SDT, @Email, @CV, @Hinh);SELECT SCOPE_IDENTITY();";
             SqlParameter[] pr = {
                 new SqlParameter("@Ten", nv.TenNV),
                 new SqlParameter("@Gioi", nv.GioiTinh),
@@ -57,7 +25,8 @@ namespace QLShopQuanAo.DAL
                 new SqlParameter("@CV", nv.ChucVu),
                 new SqlParameter("@Hinh", nv.HinhAnh)
             };
-            return DataHelper.ExecuteNonQuery(sql, pr) > 0;
+            object res = DataHelper.ExecuteScalar(sql, pr);
+            return (res != null) ? Convert.ToInt32(res) : 0;
         }
 
         public bool Update(StaffDTO nv)
@@ -86,7 +55,7 @@ namespace QLShopQuanAo.DAL
         // Hàm tìm kiếm nhân viên
         public DataTable SearchStaff(string name, string pos)
         {
-            string sql = "SELECT MaNV AS 'Mã NV', TenNV AS 'Tên NV', GioiTinh AS 'Giới Tính', NgaySinh AS 'Ngày Sinh', SDT AS 'SĐT', Email, ChucVu AS 'Chức Vụ', TrangThai as 'Trạng Thái', HinhAnh FROM NhanVien WHERE TenNV LIKE @Ten";
+            string sql = "SELECT nv.MaNV AS 'Mã NV', nv.TenNV AS 'Tên NV', nv.GioiTinh AS 'Giới Tính', nv.NgaySinh AS 'Ngày Sinh', nv.SDT AS 'SĐT', nv.Email, nv.ChucVu AS 'Chức Vụ', nv.TrangThai as 'Trạng Thái', nv.HinhAnh, tk.TenTk as 'Tên TK', tk.MatKhau as 'Mật khẩu' FROM NhanVien nv JOIN TaiKhoan tk WHERE TenNV LIKE @Ten";
             if (pos != "Tất cả" && !string.IsNullOrEmpty(pos))
             {
                 sql += " AND ChucVu = @ChucVu";
