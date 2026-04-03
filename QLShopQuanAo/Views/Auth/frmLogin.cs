@@ -11,6 +11,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
 
 namespace QLShopQuanAo
 {
@@ -18,7 +19,6 @@ namespace QLShopQuanAo
     {
 
         StaffBUS staffBUS = new StaffBUS();
-        AccountBUS accBUS = new AccountBUS();
         public frmLogin()
         {
             InitializeComponent();
@@ -60,31 +60,21 @@ namespace QLShopQuanAo
 
             try
             {
-                if (accBUS.Login(acc, pass))
+                DTO.StaffDTO info = staffBUS.CheckLogin(acc, pass);
+                if (info != null)
                 {
-                    // Nếu đúng, lấy toàn bộ thông tin (MaNV, ChucVu...)
-                    DTO.StaffDTO info = accBUS.GetAccountInfo(acc);
+                    MessageBox.Show("Đăng nhập thành công!");
+                    frmMain f = new frmMain();
+                    f.MaNV_DangNhap = info.MaNV;
+                    f.TenNV_DangNhap = info.TenNV;
+                    f.ChucVu_DangNhap = info.ChucVu;
 
-                    if (info != null)
-                    {
-                        MessageBox.Show("Đăng nhập thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
-
-                        frmMain f = new frmMain();
-                        f.MaNV_DangNhap = info.MaNV;
-                        f.ChucVu_DangNhap = info.ChucVu; // Truyền chức vụ sang để phân quyền
-                        f.TenNV_DangNhap = info.TenNV;
-
-                        this.Hide();
-                        f.ShowDialog();
-
-                        txtPassword.Clear();
-                    }
+                    this.Hide();
+                    f.ShowDialog();
                 }
                 else
                 {
-                    MessageBox.Show("Tài khoản hoặc mật khẩu không chính xác!", "Chú ý", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                    txtPassword.Clear();
-                    txtPassword.Focus();
+                    MessageBox.Show("Tài khoản hoặc mật khẩu không đúng!");
                 }
             }
             catch (Exception ex)
@@ -94,8 +84,10 @@ namespace QLShopQuanAo
         }
 
 
+
+
         //Phân quyền giữ Nhân viên và Quản lí
-            
+
 
 
     }

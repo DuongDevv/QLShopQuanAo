@@ -3,128 +3,104 @@
   "WorkspaceRootPath": "D:\\C#\\Project\\QLShopQuanAo\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{B1D8B0D7-E189-4623-A79C-0B337479FA86}|QLShopQuanAo\\QLShopQuanAo.csproj|D:\\C#\\Project\\QLShopQuanAo\\QLShopQuanAo\\Views\\Main\\frmMain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B1D8B0D7-E189-4623-A79C-0B337479FA86}|QLShopQuanAo\\QLShopQuanAo.csproj|solutionrelative:QLShopQuanAo\\Views\\Main\\frmMain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B1D8B0D7-E189-4623-A79C-0B337479FA86}|QLShopQuanAo\\QLShopQuanAo.csproj|D:\\C#\\Project\\QLShopQuanAo\\qlshopquanao\\views\\main\\frmmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B1D8B0D7-E189-4623-A79C-0B337479FA86}|QLShopQuanAo\\QLShopQuanAo.csproj|solutionrelative:qlshopquanao\\views\\main\\frmmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B1D8B0D7-E189-4623-A79C-0B337479FA86}|QLShopQuanAo\\QLShopQuanAo.csproj|d:\\c#\\project\\qlshopquanao\\qlshopquanao\\views\\main\\frmmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{B1D8B0D7-E189-4623-A79C-0B337479FA86}|QLShopQuanAo\\QLShopQuanAo.csproj|d:\\c#\\project\\qlshopquanao\\qlshopquanao\\views\\main\\order\\frmpayment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B1D8B0D7-E189-4623-A79C-0B337479FA86}|QLShopQuanAo\\QLShopQuanAo.csproj|solutionrelative:qlshopquanao\\views\\main\\order\\frmpayment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B1D8B0D7-E189-4623-A79C-0B337479FA86}|QLShopQuanAo\\QLShopQuanAo.csproj|D:\\C#\\Project\\QLShopQuanAo\\qlshopquanao\\dal\\customerdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B1D8B0D7-E189-4623-A79C-0B337479FA86}|QLShopQuanAo\\QLShopQuanAo.csproj|solutionrelative:qlshopquanao\\dal\\customerdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B1D8B0D7-E189-4623-A79C-0B337479FA86}|QLShopQuanAo\\QLShopQuanAo.csproj|D:\\C#\\Project\\QLShopQuanAo\\qlshopquanao\\views\\main\\frmmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{B1D8B0D7-E189-4623-A79C-0B337479FA86}|QLShopQuanAo\\QLShopQuanAo.csproj|solutionrelative:qlshopquanao\\views\\main\\frmmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B1D8B0D7-E189-4623-A79C-0B337479FA86}|QLShopQuanAo\\QLShopQuanAo.csproj|D:\\C#\\Project\\QLShopQuanAo\\QLShopQuanAo\\Views\\Main\\frmMain.Designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B1D8B0D7-E189-4623-A79C-0B337479FA86}|QLShopQuanAo\\QLShopQuanAo.csproj|solutionrelative:QLShopQuanAo\\Views\\Main\\frmMain.Designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B1D8B0D7-E189-4623-A79C-0B337479FA86}|QLShopQuanAo\\QLShopQuanAo.csproj|D:\\C#\\Project\\QLShopQuanAo\\qlshopquanao\\views\\main\\changepassword\\frmchangepassword.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{B1D8B0D7-E189-4623-A79C-0B337479FA86}|QLShopQuanAo\\QLShopQuanAo.csproj|solutionrelative:qlshopquanao\\views\\main\\changepassword\\frmchangepassword.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B1D8B0D7-E189-4623-A79C-0B337479FA86}|QLShopQuanAo\\QLShopQuanAo.csproj|D:\\C#\\Project\\QLShopQuanAo\\qlshopquanao\\views\\auth\\frmlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{B1D8B0D7-E189-4623-A79C-0B337479FA86}|QLShopQuanAo\\QLShopQuanAo.csproj|solutionrelative:qlshopquanao\\views\\auth\\frmlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B1D8B0D7-E189-4623-A79C-0B337479FA86}|QLShopQuanAo\\QLShopQuanAo.csproj|D:\\C#\\Project\\QLShopQuanAo\\QLShopQuanAo\\DAL\\ReportDAL.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B1D8B0D7-E189-4623-A79C-0B337479FA86}|QLShopQuanAo\\QLShopQuanAo.csproj|solutionrelative:QLShopQuanAo\\DAL\\ReportDAL.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B1D8B0D7-E189-4623-A79C-0B337479FA86}|QLShopQuanAo\\QLShopQuanAo.csproj|d:\\c#\\project\\qlshopquanao\\qlshopquanao\\views\\auth\\frmlogin.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B1D8B0D7-E189-4623-A79C-0B337479FA86}|QLShopQuanAo\\QLShopQuanAo.csproj|solutionrelative:qlshopquanao\\views\\auth\\frmlogin.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B1D8B0D7-E189-4623-A79C-0B337479FA86}|QLShopQuanAo\\QLShopQuanAo.csproj|D:\\C#\\Project\\QLShopQuanAo\\QLShopQuanAo\\DTO\\ImportDTO.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B1D8B0D7-E189-4623-A79C-0B337479FA86}|QLShopQuanAo\\QLShopQuanAo.csproj|solutionrelative:QLShopQuanAo\\DTO\\ImportDTO.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B1D8B0D7-E189-4623-A79C-0B337479FA86}|QLShopQuanAo\\QLShopQuanAo.csproj|D:\\C#\\Project\\QLShopQuanAo\\qlshopquanao\\views\\auth\\frmlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B1D8B0D7-E189-4623-A79C-0B337479FA86}|QLShopQuanAo\\QLShopQuanAo.csproj|solutionrelative:qlshopquanao\\views\\auth\\frmlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B1D8B0D7-E189-4623-A79C-0B337479FA86}|QLShopQuanAo\\QLShopQuanAo.csproj|D:\\C#\\Project\\QLShopQuanAo\\QLShopQuanAo\\DAL\\OrderDAL.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B1D8B0D7-E189-4623-A79C-0B337479FA86}|QLShopQuanAo\\QLShopQuanAo.csproj|solutionrelative:QLShopQuanAo\\DAL\\OrderDAL.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B1D8B0D7-E189-4623-A79C-0B337479FA86}|QLShopQuanAo\\QLShopQuanAo.csproj|d:\\c#\\project\\qlshopquanao\\qlshopquanao\\dto\\importdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B1D8B0D7-E189-4623-A79C-0B337479FA86}|QLShopQuanAo\\QLShopQuanAo.csproj|solutionrelative:qlshopquanao\\dto\\importdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B1D8B0D7-E189-4623-A79C-0B337479FA86}|QLShopQuanAo\\QLShopQuanAo.csproj|D:\\C#\\Project\\QLShopQuanAo\\QLShopQuanAo\\DAL\\ImportDAL.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B1D8B0D7-E189-4623-A79C-0B337479FA86}|QLShopQuanAo\\QLShopQuanAo.csproj|solutionrelative:QLShopQuanAo\\DAL\\ImportDAL.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B1D8B0D7-E189-4623-A79C-0B337479FA86}|QLShopQuanAo\\QLShopQuanAo.csproj|d:\\c#\\project\\qlshopquanao\\qlshopquanao\\bus\\reportbus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B1D8B0D7-E189-4623-A79C-0B337479FA86}|QLShopQuanAo\\QLShopQuanAo.csproj|solutionrelative:qlshopquanao\\bus\\reportbus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B1D8B0D7-E189-4623-A79C-0B337479FA86}|QLShopQuanAo\\QLShopQuanAo.csproj|D:\\C#\\Project\\QLShopQuanAo\\QLShopQuanAo\\DAL\\DataHelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B1D8B0D7-E189-4623-A79C-0B337479FA86}|QLShopQuanAo\\QLShopQuanAo.csproj|solutionrelative:QLShopQuanAo\\DAL\\DataHelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B1D8B0D7-E189-4623-A79C-0B337479FA86}|QLShopQuanAo\\QLShopQuanAo.csproj|D:\\C#\\Project\\QLShopQuanAo\\qlshopquanao\\dal\\productdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B1D8B0D7-E189-4623-A79C-0B337479FA86}|QLShopQuanAo\\QLShopQuanAo.csproj|solutionrelative:qlshopquanao\\dal\\productdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B1D8B0D7-E189-4623-A79C-0B337479FA86}|QLShopQuanAo\\QLShopQuanAo.csproj|D:\\C#\\Project\\QLShopQuanAo\\QLShopQuanAo\\DAL\\CustomerDAL.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B1D8B0D7-E189-4623-A79C-0B337479FA86}|QLShopQuanAo\\QLShopQuanAo.csproj|solutionrelative:QLShopQuanAo\\DAL\\CustomerDAL.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B1D8B0D7-E189-4623-A79C-0B337479FA86}|QLShopQuanAo\\QLShopQuanAo.csproj|D:\\C#\\Project\\QLShopQuanAo\\qlshopquanao\\dal\\orderdetaildal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B1D8B0D7-E189-4623-A79C-0B337479FA86}|QLShopQuanAo\\QLShopQuanAo.csproj|solutionrelative:qlshopquanao\\dal\\orderdetaildal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B1D8B0D7-E189-4623-A79C-0B337479FA86}|QLShopQuanAo\\QLShopQuanAo.csproj|D:\\C#\\Project\\QLShopQuanAo\\QLShopQuanAo\\BUS\\ProductBUS.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B1D8B0D7-E189-4623-A79C-0B337479FA86}|QLShopQuanAo\\QLShopQuanAo.csproj|solutionrelative:QLShopQuanAo\\BUS\\ProductBUS.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B1D8B0D7-E189-4623-A79C-0B337479FA86}|QLShopQuanAo\\QLShopQuanAo.csproj|d:\\c#\\project\\qlshopquanao\\qlshopquanao\\dal\\orderdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B1D8B0D7-E189-4623-A79C-0B337479FA86}|QLShopQuanAo\\QLShopQuanAo.csproj|solutionrelative:qlshopquanao\\dal\\orderdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B1D8B0D7-E189-4623-A79C-0B337479FA86}|QLShopQuanAo\\QLShopQuanAo.csproj|D:\\C#\\Project\\QLShopQuanAo\\QLShopQuanAo\\BUS\\ReportBUS.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B1D8B0D7-E189-4623-A79C-0B337479FA86}|QLShopQuanAo\\QLShopQuanAo.csproj|solutionrelative:QLShopQuanAo\\BUS\\ReportBUS.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B1D8B0D7-E189-4623-A79C-0B337479FA86}|QLShopQuanAo\\QLShopQuanAo.csproj|D:\\C#\\Project\\QLShopQuanAo\\qlshopquanao\\bus\\productbus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B1D8B0D7-E189-4623-A79C-0B337479FA86}|QLShopQuanAo\\QLShopQuanAo.csproj|solutionrelative:qlshopquanao\\bus\\productbus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B1D8B0D7-E189-4623-A79C-0B337479FA86}|QLShopQuanAo\\QLShopQuanAo.csproj|D:\\C#\\Project\\QLShopQuanAo\\QLShopQuanAo\\BUS\\ImportBUS.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B1D8B0D7-E189-4623-A79C-0B337479FA86}|QLShopQuanAo\\QLShopQuanAo.csproj|solutionrelative:QLShopQuanAo\\BUS\\ImportBUS.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B1D8B0D7-E189-4623-A79C-0B337479FA86}|QLShopQuanAo\\QLShopQuanAo.csproj|d:\\c#\\project\\qlshopquanao\\qlshopquanao\\bus\\orderbus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B1D8B0D7-E189-4623-A79C-0B337479FA86}|QLShopQuanAo\\QLShopQuanAo.csproj|solutionrelative:qlshopquanao\\bus\\orderbus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B1D8B0D7-E189-4623-A79C-0B337479FA86}|QLShopQuanAo\\QLShopQuanAo.csproj|d:\\c#\\project\\qlshopquanao\\qlshopquanao\\views\\main\\order\\frmpayment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{B1D8B0D7-E189-4623-A79C-0B337479FA86}|QLShopQuanAo\\QLShopQuanAo.csproj|solutionrelative:qlshopquanao\\views\\main\\order\\frmpayment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{B1D8B0D7-E189-4623-A79C-0B337479FA86}|QLShopQuanAo\\QLShopQuanAo.csproj|d:\\c#\\project\\qlshopquanao\\qlshopquanao\\bus\\importbus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B1D8B0D7-E189-4623-A79C-0B337479FA86}|QLShopQuanAo\\QLShopQuanAo.csproj|solutionrelative:qlshopquanao\\bus\\importbus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B1D8B0D7-E189-4623-A79C-0B337479FA86}|QLShopQuanAo\\QLShopQuanAo.csproj|D:\\C#\\Project\\QLShopQuanAo\\QLShopQuanAo\\DAL\\StaffDAL.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B1D8B0D7-E189-4623-A79C-0B337479FA86}|QLShopQuanAo\\QLShopQuanAo.csproj|solutionrelative:QLShopQuanAo\\DAL\\StaffDAL.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B1D8B0D7-E189-4623-A79C-0B337479FA86}|QLShopQuanAo\\QLShopQuanAo.csproj|D:\\C#\\Project\\QLShopQuanAo\\qlshopquanao\\dto\\orderdetaildto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B1D8B0D7-E189-4623-A79C-0B337479FA86}|QLShopQuanAo\\QLShopQuanAo.csproj|solutionrelative:qlshopquanao\\dto\\orderdetaildto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B1D8B0D7-E189-4623-A79C-0B337479FA86}|QLShopQuanAo\\QLShopQuanAo.csproj|D:\\C#\\Project\\QLShopQuanAo\\QLShopQuanAo\\BUS\\StaffBUS.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B1D8B0D7-E189-4623-A79C-0B337479FA86}|QLShopQuanAo\\QLShopQuanAo.csproj|solutionrelative:QLShopQuanAo\\BUS\\StaffBUS.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B1D8B0D7-E189-4623-A79C-0B337479FA86}|QLShopQuanAo\\QLShopQuanAo.csproj|d:\\c#\\project\\qlshopquanao\\qlshopquanao\\dal\\reportdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B1D8B0D7-E189-4623-A79C-0B337479FA86}|QLShopQuanAo\\QLShopQuanAo.csproj|solutionrelative:qlshopquanao\\dal\\reportdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B1D8B0D7-E189-4623-A79C-0B337479FA86}|QLShopQuanAo\\QLShopQuanAo.csproj|D:\\C#\\Project\\QLShopQuanAo\\QLShopQuanAo\\DAL\\ProductDAL.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B1D8B0D7-E189-4623-A79C-0B337479FA86}|QLShopQuanAo\\QLShopQuanAo.csproj|solutionrelative:QLShopQuanAo\\DAL\\ProductDAL.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B1D8B0D7-E189-4623-A79C-0B337479FA86}|QLShopQuanAo\\QLShopQuanAo.csproj|D:\\C#\\Project\\QLShopQuanAo\\qlshopquanao\\dto\\productdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B1D8B0D7-E189-4623-A79C-0B337479FA86}|QLShopQuanAo\\QLShopQuanAo.csproj|solutionrelative:qlshopquanao\\dto\\productdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B1D8B0D7-E189-4623-A79C-0B337479FA86}|QLShopQuanAo\\QLShopQuanAo.csproj|D:\\C#\\Project\\QLShopQuanAo\\QLShopQuanAo\\DAL\\OrderDetailDAL.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B1D8B0D7-E189-4623-A79C-0B337479FA86}|QLShopQuanAo\\QLShopQuanAo.csproj|solutionrelative:QLShopQuanAo\\DAL\\OrderDetailDAL.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B1D8B0D7-E189-4623-A79C-0B337479FA86}|QLShopQuanAo\\QLShopQuanAo.csproj|D:\\C#\\Project\\QLShopQuanAo\\qlshopquanao\\dto\\staffdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B1D8B0D7-E189-4623-A79C-0B337479FA86}|QLShopQuanAo\\QLShopQuanAo.csproj|solutionrelative:qlshopquanao\\dto\\staffdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B1D8B0D7-E189-4623-A79C-0B337479FA86}|QLShopQuanAo\\QLShopQuanAo.csproj|D:\\C#\\Project\\QLShopQuanAo\\QLShopQuanAo\\BUS\\OrderBUS.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B1D8B0D7-E189-4623-A79C-0B337479FA86}|QLShopQuanAo\\QLShopQuanAo.csproj|solutionrelative:QLShopQuanAo\\BUS\\OrderBUS.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B1D8B0D7-E189-4623-A79C-0B337479FA86}|QLShopQuanAo\\QLShopQuanAo.csproj|D:\\C#\\Project\\QLShopQuanAo\\qlshopquanao\\dto\\orderdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B1D8B0D7-E189-4623-A79C-0B337479FA86}|QLShopQuanAo\\QLShopQuanAo.csproj|solutionrelative:qlshopquanao\\dto\\orderdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B1D8B0D7-E189-4623-A79C-0B337479FA86}|QLShopQuanAo\\QLShopQuanAo.csproj|D:\\C#\\Project\\QLShopQuanAo\\QLShopQuanAo\\DTO\\OrderDetailDTO.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B1D8B0D7-E189-4623-A79C-0B337479FA86}|QLShopQuanAo\\QLShopQuanAo.csproj|solutionrelative:QLShopQuanAo\\DTO\\OrderDetailDTO.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B1D8B0D7-E189-4623-A79C-0B337479FA86}|QLShopQuanAo\\QLShopQuanAo.csproj|D:\\C#\\Project\\QLShopQuanAo\\qlshopquanao\\dal\\datahelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B1D8B0D7-E189-4623-A79C-0B337479FA86}|QLShopQuanAo\\QLShopQuanAo.csproj|solutionrelative:qlshopquanao\\dal\\datahelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B1D8B0D7-E189-4623-A79C-0B337479FA86}|QLShopQuanAo\\QLShopQuanAo.csproj|D:\\C#\\Project\\QLShopQuanAo\\QLShopQuanAo\\Views\\Main\\Order\\frmInvoice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B1D8B0D7-E189-4623-A79C-0B337479FA86}|QLShopQuanAo\\QLShopQuanAo.csproj|solutionrelative:QLShopQuanAo\\Views\\Main\\Order\\frmInvoice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B1D8B0D7-E189-4623-A79C-0B337479FA86}|QLShopQuanAo\\QLShopQuanAo.csproj|D:\\C#\\Project\\QLShopQuanAo\\qlshopquanao\\dto\\customerdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B1D8B0D7-E189-4623-A79C-0B337479FA86}|QLShopQuanAo\\QLShopQuanAo.csproj|solutionrelative:qlshopquanao\\dto\\customerdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B1D8B0D7-E189-4623-A79C-0B337479FA86}|QLShopQuanAo\\QLShopQuanAo.csproj|D:\\C#\\Project\\QLShopQuanAo\\qlshopquanao\\views\\main\\order\\frminvoice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{B1D8B0D7-E189-4623-A79C-0B337479FA86}|QLShopQuanAo\\QLShopQuanAo.csproj|solutionrelative:qlshopquanao\\views\\main\\order\\frminvoice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{B1D8B0D7-E189-4623-A79C-0B337479FA86}|QLShopQuanAo\\QLShopQuanAo.csproj|D:\\C#\\Project\\QLShopQuanAo\\qlshopquanao\\bus\\customerbus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B1D8B0D7-E189-4623-A79C-0B337479FA86}|QLShopQuanAo\\QLShopQuanAo.csproj|solutionrelative:qlshopquanao\\bus\\customerbus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B1D8B0D7-E189-4623-A79C-0B337479FA86}|QLShopQuanAo\\QLShopQuanAo.csproj|D:\\C#\\Project\\QLShopQuanAo\\QLShopQuanAo\\Views\\Main\\Order\\frmInvoice.Designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B1D8B0D7-E189-4623-A79C-0B337479FA86}|QLShopQuanAo\\QLShopQuanAo.csproj|solutionrelative:QLShopQuanAo\\Views\\Main\\Order\\frmInvoice.Designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B1D8B0D7-E189-4623-A79C-0B337479FA86}|QLShopQuanAo\\QLShopQuanAo.csproj|D:\\C#\\Project\\QLShopQuanAo\\qlshopquanao\\bus\\staffbus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B1D8B0D7-E189-4623-A79C-0B337479FA86}|QLShopQuanAo\\QLShopQuanAo.csproj|solutionrelative:qlshopquanao\\bus\\staffbus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B1D8B0D7-E189-4623-A79C-0B337479FA86}|QLShopQuanAo\\QLShopQuanAo.csproj|D:\\C#\\Project\\QLShopQuanAo\\QLShopQuanAo\\DTO\\StaffDTO.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B1D8B0D7-E189-4623-A79C-0B337479FA86}|QLShopQuanAo\\QLShopQuanAo.csproj|solutionrelative:QLShopQuanAo\\DTO\\StaffDTO.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B1D8B0D7-E189-4623-A79C-0B337479FA86}|QLShopQuanAo\\QLShopQuanAo.csproj|D:\\C#\\Project\\QLShopQuanAo\\QLShopQuanAo\\BUS\\CustomerBUS.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B1D8B0D7-E189-4623-A79C-0B337479FA86}|QLShopQuanAo\\QLShopQuanAo.csproj|solutionrelative:QLShopQuanAo\\BUS\\CustomerBUS.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B1D8B0D7-E189-4623-A79C-0B337479FA86}|QLShopQuanAo\\QLShopQuanAo.csproj|D:\\C#\\Project\\QLShopQuanAo\\QLShopQuanAo\\DTO\\OrderDTO.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B1D8B0D7-E189-4623-A79C-0B337479FA86}|QLShopQuanAo\\QLShopQuanAo.csproj|solutionrelative:QLShopQuanAo\\DTO\\OrderDTO.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B1D8B0D7-E189-4623-A79C-0B337479FA86}|QLShopQuanAo\\QLShopQuanAo.csproj|D:\\C#\\Project\\QLShopQuanAo\\QLShopQuanAo\\DTO\\ProductDTO.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B1D8B0D7-E189-4623-A79C-0B337479FA86}|QLShopQuanAo\\QLShopQuanAo.csproj|solutionrelative:QLShopQuanAo\\DTO\\ProductDTO.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B1D8B0D7-E189-4623-A79C-0B337479FA86}|QLShopQuanAo\\QLShopQuanAo.csproj|D:\\C#\\Project\\QLShopQuanAo\\QLShopQuanAo\\DTO\\CustomerDTO.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B1D8B0D7-E189-4623-A79C-0B337479FA86}|QLShopQuanAo\\QLShopQuanAo.csproj|solutionrelative:QLShopQuanAo\\DTO\\CustomerDTO.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B1D8B0D7-E189-4623-A79C-0B337479FA86}|QLShopQuanAo\\QLShopQuanAo.csproj|D:\\C#\\Project\\QLShopQuanAo\\QLShopQuanAo\\Views\\Auth\\frmLogin.Designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B1D8B0D7-E189-4623-A79C-0B337479FA86}|QLShopQuanAo\\QLShopQuanAo.csproj|solutionrelative:QLShopQuanAo\\Views\\Auth\\frmLogin.Designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B1D8B0D7-E189-4623-A79C-0B337479FA86}|QLShopQuanAo\\QLShopQuanAo.csproj|D:\\C#\\Project\\QLShopQuanAo\\QLShopQuanAo\\Views\\Main\\ChangePassword\\frmChangePassword.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B1D8B0D7-E189-4623-A79C-0B337479FA86}|QLShopQuanAo\\QLShopQuanAo.csproj|solutionrelative:QLShopQuanAo\\Views\\Main\\ChangePassword\\frmChangePassword.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B1D8B0D7-E189-4623-A79C-0B337479FA86}|QLShopQuanAo\\QLShopQuanAo.csproj|D:\\C#\\Project\\QLShopQuanAo\\qlshopquanao\\dal\\staffdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B1D8B0D7-E189-4623-A79C-0B337479FA86}|QLShopQuanAo\\QLShopQuanAo.csproj|solutionrelative:qlshopquanao\\dal\\staffdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -144,104 +120,301 @@
               "RelativeDocumentMoniker": "QLShopQuanAo\\Views\\Main\\frmMain.cs",
               "ToolTip": "D:\\C#\\Project\\QLShopQuanAo\\QLShopQuanAo\\Views\\Main\\frmMain.cs",
               "RelativeToolTip": "QLShopQuanAo\\Views\\Main\\frmMain.cs",
-              "ViewState": "AgIAACUFAAAAY+/FF80swDUFAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAUEAADAlNV0PRErwBwEAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-15T14:46:20.115Z",
+              "WhenOpened": "2026-03-28T10:39:59.049Z",
               "IsPinned": true,
               "EditorCaption": ""
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{25f7e850-ffa1-11d0-b63f-00a0c922e851}"
-            },
-            {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "frmMain.Designer.cs",
-              "DocumentMoniker": "D:\\C#\\Project\\QLShopQuanAo\\QLShopQuanAo\\Views\\Main\\frmMain.Designer.cs",
-              "RelativeDocumentMoniker": "QLShopQuanAo\\Views\\Main\\frmMain.Designer.cs",
-              "ToolTip": "D:\\C#\\Project\\QLShopQuanAo\\QLShopQuanAo\\Views\\Main\\frmMain.Designer.cs",
-              "RelativeToolTip": "QLShopQuanAo\\Views\\Main\\frmMain.Designer.cs",
-              "ViewState": "AgIAAOwBAAAAAAAAAAAEwPIBAAAPAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-16T14:21:55.881Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "frmMain.cs [Design]",
               "DocumentMoniker": "D:\\C#\\Project\\QLShopQuanAo\\QLShopQuanAo\\Views\\Main\\frmMain.cs",
               "RelativeDocumentMoniker": "QLShopQuanAo\\Views\\Main\\frmMain.cs",
               "ToolTip": "D:\\C#\\Project\\QLShopQuanAo\\QLShopQuanAo\\Views\\Main\\frmMain.cs [Design]",
               "RelativeToolTip": "QLShopQuanAo\\Views\\Main\\frmMain.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-25T04:01:20.628Z",
+              "WhenOpened": "2026-03-28T10:39:52.51Z",
+              "IsPinned": true,
               "EditorCaption": " [Design]"
             },
             {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "OrderDAL.cs",
-              "DocumentMoniker": "D:\\C#\\Project\\QLShopQuanAo\\QLShopQuanAo\\DAL\\OrderDAL.cs",
-              "RelativeDocumentMoniker": "QLShopQuanAo\\DAL\\OrderDAL.cs",
-              "ToolTip": "D:\\C#\\Project\\QLShopQuanAo\\QLShopQuanAo\\DAL\\OrderDAL.cs",
-              "RelativeToolTip": "QLShopQuanAo\\DAL\\OrderDAL.cs",
-              "ViewState": "AgIAACIAAAAAAAAAAAAQwDIAAAARAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-20T08:17:03.976Z",
-              "EditorCaption": ""
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{25f7e850-ffa1-11d0-b63f-00a0c922e851}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "ImportDTO.cs",
-              "DocumentMoniker": "D:\\C#\\Project\\QLShopQuanAo\\QLShopQuanAo\\DTO\\ImportDTO.cs",
-              "RelativeDocumentMoniker": "QLShopQuanAo\\DTO\\ImportDTO.cs",
-              "ToolTip": "D:\\C#\\Project\\QLShopQuanAo\\QLShopQuanAo\\DTO\\ImportDTO.cs",
-              "RelativeToolTip": "QLShopQuanAo\\DTO\\ImportDTO.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAAA8AAAAlAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "frmPayment.cs",
+              "DocumentMoniker": "D:\\C#\\Project\\QLShopQuanAo\\QLShopQuanAo\\Views\\Main\\Order\\frmPayment.cs",
+              "RelativeDocumentMoniker": "QLShopQuanAo\\Views\\Main\\Order\\frmPayment.cs",
+              "ToolTip": "D:\\C#\\Project\\QLShopQuanAo\\QLShopQuanAo\\Views\\Main\\Order\\frmPayment.cs",
+              "RelativeToolTip": "QLShopQuanAo\\Views\\Main\\Order\\frmPayment.cs",
+              "ViewState": "AgIAAGYAAAAAWArWOPv8v2UAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-20T11:39:04.339Z",
+              "WhenOpened": "2026-04-03T17:07:47.058Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 8,
-              "Title": "ImportDAL.cs",
-              "DocumentMoniker": "D:\\C#\\Project\\QLShopQuanAo\\QLShopQuanAo\\DAL\\ImportDAL.cs",
-              "RelativeDocumentMoniker": "QLShopQuanAo\\DAL\\ImportDAL.cs",
-              "ToolTip": "D:\\C#\\Project\\QLShopQuanAo\\QLShopQuanAo\\DAL\\ImportDAL.cs",
-              "RelativeToolTip": "QLShopQuanAo\\DAL\\ImportDAL.cs",
-              "ViewState": "AgIAABYAAAAAAAAAAAAUwCUAAABCAAAAAAAAAA==",
+              "Title": "ReportBUS.cs",
+              "DocumentMoniker": "D:\\C#\\Project\\QLShopQuanAo\\QLShopQuanAo\\BUS\\ReportBUS.cs",
+              "RelativeDocumentMoniker": "QLShopQuanAo\\BUS\\ReportBUS.cs",
+              "ToolTip": "D:\\C#\\Project\\QLShopQuanAo\\QLShopQuanAo\\BUS\\ReportBUS.cs",
+              "RelativeToolTip": "QLShopQuanAo\\BUS\\ReportBUS.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-20T11:39:42.342Z",
+              "WhenOpened": "2026-04-03T14:22:01.534Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 14,
+              "Title": "ImportBUS.cs",
+              "DocumentMoniker": "D:\\C#\\Project\\QLShopQuanAo\\QLShopQuanAo\\BUS\\ImportBUS.cs",
+              "RelativeDocumentMoniker": "QLShopQuanAo\\BUS\\ImportBUS.cs",
+              "ToolTip": "D:\\C#\\Project\\QLShopQuanAo\\QLShopQuanAo\\BUS\\ImportBUS.cs",
+              "RelativeToolTip": "QLShopQuanAo\\BUS\\ImportBUS.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-03T14:22:00.518Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "OrderBUS.cs",
+              "DocumentMoniker": "D:\\C#\\Project\\QLShopQuanAo\\QLShopQuanAo\\BUS\\OrderBUS.cs",
+              "RelativeDocumentMoniker": "QLShopQuanAo\\BUS\\OrderBUS.cs",
+              "ToolTip": "D:\\C#\\Project\\QLShopQuanAo\\QLShopQuanAo\\BUS\\OrderBUS.cs",
+              "RelativeToolTip": "QLShopQuanAo\\BUS\\OrderBUS.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-03T14:18:56.096Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "OrderDAL.cs",
+              "DocumentMoniker": "D:\\C#\\Project\\QLShopQuanAo\\QLShopQuanAo\\DAL\\OrderDAL.cs",
+              "RelativeDocumentMoniker": "QLShopQuanAo\\DAL\\OrderDAL.cs",
+              "ToolTip": "D:\\C#\\Project\\QLShopQuanAo\\QLShopQuanAo\\DAL\\OrderDAL.cs",
+              "RelativeToolTip": "QLShopQuanAo\\DAL\\OrderDAL.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-03T14:18:48.42Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "CustomerDAL.cs",
+              "DocumentMoniker": "D:\\C#\\Project\\QLShopQuanAo\\QLShopQuanAo\\DAL\\CustomerDAL.cs",
+              "RelativeDocumentMoniker": "QLShopQuanAo\\DAL\\CustomerDAL.cs",
+              "ToolTip": "D:\\C#\\Project\\QLShopQuanAo\\QLShopQuanAo\\DAL\\CustomerDAL.cs",
+              "RelativeToolTip": "QLShopQuanAo\\DAL\\CustomerDAL.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAGIAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-30T10:24:39.92Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "frmLogin.Designer.cs",
+              "DocumentMoniker": "D:\\C#\\Project\\QLShopQuanAo\\QLShopQuanAo\\Views\\Auth\\frmLogin.Designer.cs",
+              "RelativeDocumentMoniker": "QLShopQuanAo\\Views\\Auth\\frmLogin.Designer.cs",
+              "ToolTip": "D:\\C#\\Project\\QLShopQuanAo\\QLShopQuanAo\\Views\\Auth\\frmLogin.Designer.cs",
+              "RelativeToolTip": "QLShopQuanAo\\Views\\Auth\\frmLogin.Designer.cs",
+              "ViewState": "AgIAAGgAAAAAAAAAAAApwHIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-03T16:14:46.279Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "ReportDAL.cs",
+              "DocumentMoniker": "D:\\C#\\Project\\QLShopQuanAo\\QLShopQuanAo\\DAL\\ReportDAL.cs",
+              "RelativeDocumentMoniker": "QLShopQuanAo\\DAL\\ReportDAL.cs",
+              "ToolTip": "D:\\C#\\Project\\QLShopQuanAo\\QLShopQuanAo\\DAL\\ReportDAL.cs",
+              "RelativeToolTip": "QLShopQuanAo\\DAL\\ReportDAL.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-03T14:14:56.96Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ImportDTO.cs",
+              "DocumentMoniker": "D:\\C#\\Project\\QLShopQuanAo\\QLShopQuanAo\\DTO\\ImportDTO.cs",
+              "RelativeDocumentMoniker": "QLShopQuanAo\\DTO\\ImportDTO.cs",
+              "ToolTip": "D:\\C#\\Project\\QLShopQuanAo\\QLShopQuanAo\\DTO\\ImportDTO.cs",
+              "RelativeToolTip": "QLShopQuanAo\\DTO\\ImportDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-30T15:38:59.422Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "OrderDetailDAL.cs",
+              "DocumentMoniker": "D:\\C#\\Project\\QLShopQuanAo\\QLShopQuanAo\\DAL\\OrderDetailDAL.cs",
+              "RelativeDocumentMoniker": "QLShopQuanAo\\DAL\\OrderDetailDAL.cs",
+              "ToolTip": "D:\\C#\\Project\\QLShopQuanAo\\QLShopQuanAo\\DAL\\OrderDetailDAL.cs",
+              "RelativeToolTip": "QLShopQuanAo\\DAL\\OrderDetailDAL.cs",
+              "ViewState": "AgIAAAQAAADgeXB31t4awA8AAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-30T14:41:32.411Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "ProductBUS.cs",
+              "DocumentMoniker": "D:\\C#\\Project\\QLShopQuanAo\\QLShopQuanAo\\BUS\\ProductBUS.cs",
+              "RelativeDocumentMoniker": "QLShopQuanAo\\BUS\\ProductBUS.cs",
+              "ToolTip": "D:\\C#\\Project\\QLShopQuanAo\\QLShopQuanAo\\BUS\\ProductBUS.cs",
+              "RelativeToolTip": "QLShopQuanAo\\BUS\\ProductBUS.cs",
+              "ViewState": "AgIAAB0AAAAAAAAAAAAiwCsAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-30T11:22:48.51Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "ProductDTO.cs",
+              "DocumentMoniker": "D:\\C#\\Project\\QLShopQuanAo\\QLShopQuanAo\\DTO\\ProductDTO.cs",
+              "RelativeDocumentMoniker": "QLShopQuanAo\\DTO\\ProductDTO.cs",
+              "ToolTip": "D:\\C#\\Project\\QLShopQuanAo\\QLShopQuanAo\\DTO\\ProductDTO.cs",
+              "RelativeToolTip": "QLShopQuanAo\\DTO\\ProductDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-30T11:09:16.12Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "CustomerDTO.cs",
+              "DocumentMoniker": "D:\\C#\\Project\\QLShopQuanAo\\QLShopQuanAo\\DTO\\CustomerDTO.cs",
+              "RelativeDocumentMoniker": "QLShopQuanAo\\DTO\\CustomerDTO.cs",
+              "ToolTip": "D:\\C#\\Project\\QLShopQuanAo\\QLShopQuanAo\\DTO\\CustomerDTO.cs",
+              "RelativeToolTip": "QLShopQuanAo\\DTO\\CustomerDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-30T10:22:33.413Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "CustomerBUS.cs",
+              "DocumentMoniker": "D:\\C#\\Project\\QLShopQuanAo\\QLShopQuanAo\\BUS\\CustomerBUS.cs",
+              "RelativeDocumentMoniker": "QLShopQuanAo\\BUS\\CustomerBUS.cs",
+              "ToolTip": "D:\\C#\\Project\\QLShopQuanAo\\QLShopQuanAo\\BUS\\CustomerBUS.cs",
+              "RelativeToolTip": "QLShopQuanAo\\BUS\\CustomerBUS.cs",
+              "ViewState": "AgIAACAAAAAAAAAAAAAAADkAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-30T10:19:20.532Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "OrderDTO.cs",
+              "DocumentMoniker": "D:\\C#\\Project\\QLShopQuanAo\\QLShopQuanAo\\DTO\\OrderDTO.cs",
+              "RelativeDocumentMoniker": "QLShopQuanAo\\DTO\\OrderDTO.cs",
+              "ToolTip": "D:\\C#\\Project\\QLShopQuanAo\\QLShopQuanAo\\DTO\\OrderDTO.cs",
+              "RelativeToolTip": "QLShopQuanAo\\DTO\\OrderDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-30T09:36:31.277Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "OrderDetailDTO.cs",
+              "DocumentMoniker": "D:\\C#\\Project\\QLShopQuanAo\\QLShopQuanAo\\DTO\\OrderDetailDTO.cs",
+              "RelativeDocumentMoniker": "QLShopQuanAo\\DTO\\OrderDetailDTO.cs",
+              "ToolTip": "D:\\C#\\Project\\QLShopQuanAo\\QLShopQuanAo\\DTO\\OrderDetailDTO.cs",
+              "RelativeToolTip": "QLShopQuanAo\\DTO\\OrderDetailDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-30T09:36:22.086Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "frmLogin.cs",
+              "DocumentMoniker": "D:\\C#\\Project\\QLShopQuanAo\\QLShopQuanAo\\Views\\Auth\\frmLogin.cs",
+              "RelativeDocumentMoniker": "QLShopQuanAo\\Views\\Auth\\frmLogin.cs",
+              "ToolTip": "D:\\C#\\Project\\QLShopQuanAo\\QLShopQuanAo\\Views\\Auth\\frmLogin.cs",
+              "RelativeToolTip": "QLShopQuanAo\\Views\\Auth\\frmLogin.cs",
+              "ViewState": "AgIAAEYAAAAAAAAAAAAawFUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-28T11:01:37.09Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "StaffBUS.cs",
+              "DocumentMoniker": "D:\\C#\\Project\\QLShopQuanAo\\QLShopQuanAo\\BUS\\StaffBUS.cs",
+              "RelativeDocumentMoniker": "QLShopQuanAo\\BUS\\StaffBUS.cs",
+              "ToolTip": "D:\\C#\\Project\\QLShopQuanAo\\QLShopQuanAo\\BUS\\StaffBUS.cs",
+              "RelativeToolTip": "QLShopQuanAo\\BUS\\StaffBUS.cs",
+              "ViewState": "AgIAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-30T09:17:34.076Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
               "Title": "DataHelper.cs",
               "DocumentMoniker": "D:\\C#\\Project\\QLShopQuanAo\\QLShopQuanAo\\DAL\\DataHelper.cs",
               "RelativeDocumentMoniker": "QLShopQuanAo\\DAL\\DataHelper.cs",
               "ToolTip": "D:\\C#\\Project\\QLShopQuanAo\\QLShopQuanAo\\DAL\\DataHelper.cs",
               "RelativeToolTip": "QLShopQuanAo\\DAL\\DataHelper.cs",
-              "ViewState": "AgIAABMAAAAAAAAAAADwvy8AAAA8AAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-20T05:37:55.771Z",
+              "WhenOpened": "2026-03-30T09:06:41.142Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "ProductDAL.cs",
+              "DocumentMoniker": "D:\\C#\\Project\\QLShopQuanAo\\QLShopQuanAo\\DAL\\ProductDAL.cs",
+              "RelativeDocumentMoniker": "QLShopQuanAo\\DAL\\ProductDAL.cs",
+              "ToolTip": "D:\\C#\\Project\\QLShopQuanAo\\QLShopQuanAo\\DAL\\ProductDAL.cs",
+              "RelativeToolTip": "QLShopQuanAo\\DAL\\ProductDAL.cs",
+              "ViewState": "AgIAAFwAAAAAAAAAAAAcwH0AAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-30T02:53:03.49Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "frmChangePassword.cs [Design]",
-              "DocumentMoniker": "D:\\C#\\Project\\QLShopQuanAo\\QLShopQuanAo\\Views\\Main\\ChangePassword\\frmChangePassword.cs",
-              "RelativeDocumentMoniker": "QLShopQuanAo\\Views\\Main\\ChangePassword\\frmChangePassword.cs",
-              "ToolTip": "D:\\C#\\Project\\QLShopQuanAo\\QLShopQuanAo\\Views\\Main\\ChangePassword\\frmChangePassword.cs [Design]",
-              "RelativeToolTip": "QLShopQuanAo\\Views\\Main\\ChangePassword\\frmChangePassword.cs [Design]",
+              "DocumentIndex": 18,
+              "Title": "StaffDTO.cs",
+              "DocumentMoniker": "D:\\C#\\Project\\QLShopQuanAo\\QLShopQuanAo\\DTO\\StaffDTO.cs",
+              "RelativeDocumentMoniker": "QLShopQuanAo\\DTO\\StaffDTO.cs",
+              "ToolTip": "D:\\C#\\Project\\QLShopQuanAo\\QLShopQuanAo\\DTO\\StaffDTO.cs",
+              "RelativeToolTip": "QLShopQuanAo\\DTO\\StaffDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-16T11:23:01.36Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2026-03-29T03:30:08.763Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -252,278 +425,20 @@
               "ToolTip": "D:\\C#\\Project\\QLShopQuanAo\\QLShopQuanAo\\Views\\Auth\\frmLogin.cs [Design]",
               "RelativeToolTip": "QLShopQuanAo\\Views\\Auth\\frmLogin.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-16T11:30:47.84Z",
+              "WhenOpened": "2026-03-28T11:03:20.861Z",
               "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "ReportDAL.cs",
-              "DocumentMoniker": "D:\\C#\\Project\\QLShopQuanAo\\QLShopQuanAo\\DAL\\ReportDAL.cs",
-              "RelativeDocumentMoniker": "QLShopQuanAo\\DAL\\ReportDAL.cs",
-              "ToolTip": "D:\\C#\\Project\\QLShopQuanAo\\QLShopQuanAo\\DAL\\ReportDAL.cs",
-              "RelativeToolTip": "QLShopQuanAo\\DAL\\ReportDAL.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAADUAAAA6AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-20T08:43:44.274Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "CustomerDAL.cs",
-              "DocumentMoniker": "D:\\C#\\Project\\QLShopQuanAo\\QLShopQuanAo\\DAL\\CustomerDAL.cs",
-              "RelativeDocumentMoniker": "QLShopQuanAo\\DAL\\CustomerDAL.cs",
-              "ToolTip": "D:\\C#\\Project\\QLShopQuanAo\\QLShopQuanAo\\DAL\\CustomerDAL.cs",
-              "RelativeToolTip": "QLShopQuanAo\\DAL\\CustomerDAL.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAADwAAAAeAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-20T07:38:32.497Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "ProductBUS.cs",
-              "DocumentMoniker": "D:\\C#\\Project\\QLShopQuanAo\\QLShopQuanAo\\BUS\\ProductBUS.cs",
-              "RelativeDocumentMoniker": "QLShopQuanAo\\BUS\\ProductBUS.cs",
-              "ToolTip": "D:\\C#\\Project\\QLShopQuanAo\\QLShopQuanAo\\BUS\\ProductBUS.cs",
-              "RelativeToolTip": "QLShopQuanAo\\BUS\\ProductBUS.cs",
-              "ViewState": "AgIAABwAAAAAAAAAAAA5wCwAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-20T07:41:10.152Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "ReportBUS.cs",
-              "DocumentMoniker": "D:\\C#\\Project\\QLShopQuanAo\\QLShopQuanAo\\BUS\\ReportBUS.cs",
-              "RelativeDocumentMoniker": "QLShopQuanAo\\BUS\\ReportBUS.cs",
-              "ToolTip": "D:\\C#\\Project\\QLShopQuanAo\\QLShopQuanAo\\BUS\\ReportBUS.cs",
-              "RelativeToolTip": "QLShopQuanAo\\BUS\\ReportBUS.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAACMAAAAWAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-20T09:02:12.993Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "ImportBUS.cs",
-              "DocumentMoniker": "D:\\C#\\Project\\QLShopQuanAo\\QLShopQuanAo\\BUS\\ImportBUS.cs",
-              "RelativeDocumentMoniker": "QLShopQuanAo\\BUS\\ImportBUS.cs",
-              "ToolTip": "D:\\C#\\Project\\QLShopQuanAo\\QLShopQuanAo\\BUS\\ImportBUS.cs",
-              "RelativeToolTip": "QLShopQuanAo\\BUS\\ImportBUS.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAwAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-20T11:40:44.184Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "frmPayment.cs [Design]",
-              "DocumentMoniker": "D:\\C#\\Project\\QLShopQuanAo\\QLShopQuanAo\\Views\\Main\\Order\\frmPayment.cs",
-              "RelativeDocumentMoniker": "QLShopQuanAo\\Views\\Main\\Order\\frmPayment.cs",
-              "ToolTip": "D:\\C#\\Project\\QLShopQuanAo\\QLShopQuanAo\\Views\\Main\\Order\\frmPayment.cs [Design]",
-              "RelativeToolTip": "QLShopQuanAo\\Views\\Main\\Order\\frmPayment.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-15T14:55:17.031Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "StaffBUS.cs",
-              "DocumentMoniker": "D:\\C#\\Project\\QLShopQuanAo\\QLShopQuanAo\\BUS\\StaffBUS.cs",
-              "RelativeDocumentMoniker": "QLShopQuanAo\\BUS\\StaffBUS.cs",
-              "ToolTip": "D:\\C#\\Project\\QLShopQuanAo\\QLShopQuanAo\\BUS\\StaffBUS.cs",
-              "RelativeToolTip": "QLShopQuanAo\\BUS\\StaffBUS.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-20T05:42:31.138Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 24,
               "Title": "StaffDAL.cs",
               "DocumentMoniker": "D:\\C#\\Project\\QLShopQuanAo\\QLShopQuanAo\\DAL\\StaffDAL.cs",
               "RelativeDocumentMoniker": "QLShopQuanAo\\DAL\\StaffDAL.cs",
               "ToolTip": "D:\\C#\\Project\\QLShopQuanAo\\QLShopQuanAo\\DAL\\StaffDAL.cs",
               "RelativeToolTip": "QLShopQuanAo\\DAL\\StaffDAL.cs",
-              "ViewState": "AgIAAEcAAAAAAAAAAAAgwEQAAAA3AAAAAAAAAA==",
+              "ViewState": "AgIAAEUAAAAAAAAAAAAAACYAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-20T05:41:46.937Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "ProductDAL.cs",
-              "DocumentMoniker": "D:\\C#\\Project\\QLShopQuanAo\\QLShopQuanAo\\DAL\\ProductDAL.cs",
-              "RelativeDocumentMoniker": "QLShopQuanAo\\DAL\\ProductDAL.cs",
-              "ToolTip": "D:\\C#\\Project\\QLShopQuanAo\\QLShopQuanAo\\DAL\\ProductDAL.cs",
-              "RelativeToolTip": "QLShopQuanAo\\DAL\\ProductDAL.cs",
-              "ViewState": "AgIAADkAAAAAAAAAAAAAAA4AAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-20T07:40:12.197Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "OrderDetailDAL.cs",
-              "DocumentMoniker": "D:\\C#\\Project\\QLShopQuanAo\\QLShopQuanAo\\DAL\\OrderDetailDAL.cs",
-              "RelativeDocumentMoniker": "QLShopQuanAo\\DAL\\OrderDetailDAL.cs",
-              "ToolTip": "D:\\C#\\Project\\QLShopQuanAo\\QLShopQuanAo\\DAL\\OrderDetailDAL.cs",
-              "RelativeToolTip": "QLShopQuanAo\\DAL\\OrderDetailDAL.cs",
-              "ViewState": "AgIAABYAAAAAAAAAAAAQwCYAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-20T08:17:25.012Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "OrderBUS.cs",
-              "DocumentMoniker": "D:\\C#\\Project\\QLShopQuanAo\\QLShopQuanAo\\BUS\\OrderBUS.cs",
-              "RelativeDocumentMoniker": "QLShopQuanAo\\BUS\\OrderBUS.cs",
-              "ToolTip": "D:\\C#\\Project\\QLShopQuanAo\\QLShopQuanAo\\BUS\\OrderBUS.cs",
-              "RelativeToolTip": "QLShopQuanAo\\BUS\\OrderBUS.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-20T08:17:58.9Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "OrderDetailDTO.cs",
-              "DocumentMoniker": "D:\\C#\\Project\\QLShopQuanAo\\QLShopQuanAo\\DTO\\OrderDetailDTO.cs",
-              "RelativeDocumentMoniker": "QLShopQuanAo\\DTO\\OrderDetailDTO.cs",
-              "ToolTip": "D:\\C#\\Project\\QLShopQuanAo\\QLShopQuanAo\\DTO\\OrderDetailDTO.cs",
-              "RelativeToolTip": "QLShopQuanAo\\DTO\\OrderDetailDTO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-20T08:15:50.653Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "frmInvoice.cs",
-              "DocumentMoniker": "D:\\C#\\Project\\QLShopQuanAo\\QLShopQuanAo\\Views\\Main\\Order\\frmInvoice.cs",
-              "RelativeDocumentMoniker": "QLShopQuanAo\\Views\\Main\\Order\\frmInvoice.cs",
-              "ToolTip": "D:\\C#\\Project\\QLShopQuanAo\\QLShopQuanAo\\Views\\Main\\Order\\frmInvoice.cs",
-              "RelativeToolTip": "QLShopQuanAo\\Views\\Main\\Order\\frmInvoice.cs",
-              "ViewState": "AgIAABsAAAAAAAAAAAAywDYAAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-20T12:27:42.218Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "frmInvoice.cs [Design]",
-              "DocumentMoniker": "D:\\C#\\Project\\QLShopQuanAo\\QLShopQuanAo\\Views\\Main\\Order\\frmInvoice.cs",
-              "RelativeDocumentMoniker": "QLShopQuanAo\\Views\\Main\\Order\\frmInvoice.cs",
-              "ToolTip": "D:\\C#\\Project\\QLShopQuanAo\\QLShopQuanAo\\Views\\Main\\Order\\frmInvoice.cs [Design]",
-              "RelativeToolTip": "QLShopQuanAo\\Views\\Main\\Order\\frmInvoice.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-20T12:22:05.134Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 23,
-              "Title": "frmInvoice.Designer.cs",
-              "DocumentMoniker": "D:\\C#\\Project\\QLShopQuanAo\\QLShopQuanAo\\Views\\Main\\Order\\frmInvoice.Designer.cs",
-              "RelativeDocumentMoniker": "QLShopQuanAo\\Views\\Main\\Order\\frmInvoice.Designer.cs",
-              "ToolTip": "D:\\C#\\Project\\QLShopQuanAo\\QLShopQuanAo\\Views\\Main\\Order\\frmInvoice.Designer.cs",
-              "RelativeToolTip": "QLShopQuanAo\\Views\\Main\\Order\\frmInvoice.Designer.cs",
-              "ViewState": "AgIAADMBAAAAAAAAAAAawEMBAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-20T12:41:07.234Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 24,
-              "Title": "StaffDTO.cs",
-              "DocumentMoniker": "D:\\C#\\Project\\QLShopQuanAo\\QLShopQuanAo\\DTO\\StaffDTO.cs",
-              "RelativeDocumentMoniker": "QLShopQuanAo\\DTO\\StaffDTO.cs",
-              "ToolTip": "D:\\C#\\Project\\QLShopQuanAo\\QLShopQuanAo\\DTO\\StaffDTO.cs",
-              "RelativeToolTip": "QLShopQuanAo\\DTO\\StaffDTO.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAABIAAAAsAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-20T05:39:05.018Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 25,
-              "Title": "CustomerBUS.cs",
-              "DocumentMoniker": "D:\\C#\\Project\\QLShopQuanAo\\QLShopQuanAo\\BUS\\CustomerBUS.cs",
-              "RelativeDocumentMoniker": "QLShopQuanAo\\BUS\\CustomerBUS.cs",
-              "ToolTip": "D:\\C#\\Project\\QLShopQuanAo\\QLShopQuanAo\\BUS\\CustomerBUS.cs",
-              "RelativeToolTip": "QLShopQuanAo\\BUS\\CustomerBUS.cs",
-              "ViewState": "AgIAABwAAAAAAAAAAAA7wCoAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-20T07:40:33.781Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 26,
-              "Title": "OrderDTO.cs",
-              "DocumentMoniker": "D:\\C#\\Project\\QLShopQuanAo\\QLShopQuanAo\\DTO\\OrderDTO.cs",
-              "RelativeDocumentMoniker": "QLShopQuanAo\\DTO\\OrderDTO.cs",
-              "ToolTip": "D:\\C#\\Project\\QLShopQuanAo\\QLShopQuanAo\\DTO\\OrderDTO.cs",
-              "RelativeToolTip": "QLShopQuanAo\\DTO\\OrderDTO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAKAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-20T08:15:18.308Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 27,
-              "Title": "ProductDTO.cs",
-              "DocumentMoniker": "D:\\C#\\Project\\QLShopQuanAo\\QLShopQuanAo\\DTO\\ProductDTO.cs",
-              "RelativeDocumentMoniker": "QLShopQuanAo\\DTO\\ProductDTO.cs",
-              "ToolTip": "D:\\C#\\Project\\QLShopQuanAo\\QLShopQuanAo\\DTO\\ProductDTO.cs",
-              "RelativeToolTip": "QLShopQuanAo\\DTO\\ProductDTO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAtAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-20T07:39:36.703Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 28,
-              "Title": "CustomerDTO.cs",
-              "DocumentMoniker": "D:\\C#\\Project\\QLShopQuanAo\\QLShopQuanAo\\DTO\\CustomerDTO.cs",
-              "RelativeDocumentMoniker": "QLShopQuanAo\\DTO\\CustomerDTO.cs",
-              "ToolTip": "D:\\C#\\Project\\QLShopQuanAo\\QLShopQuanAo\\DTO\\CustomerDTO.cs",
-              "RelativeToolTip": "QLShopQuanAo\\DTO\\CustomerDTO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAqAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-20T07:38:02.204Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 29,
-              "Title": "frmLogin.Designer.cs",
-              "DocumentMoniker": "D:\\C#\\Project\\QLShopQuanAo\\QLShopQuanAo\\Views\\Auth\\frmLogin.Designer.cs",
-              "RelativeDocumentMoniker": "QLShopQuanAo\\Views\\Auth\\frmLogin.Designer.cs",
-              "ToolTip": "D:\\C#\\Project\\QLShopQuanAo\\QLShopQuanAo\\Views\\Auth\\frmLogin.Designer.cs",
-              "RelativeToolTip": "QLShopQuanAo\\Views\\Auth\\frmLogin.Designer.cs",
-              "ViewState": "AgIAAGMAAAAAAAAAAAAvwHIAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-16T11:46:24.578Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 30,
-              "Title": "frmChangePassword.cs",
-              "DocumentMoniker": "D:\\C#\\Project\\QLShopQuanAo\\QLShopQuanAo\\Views\\Main\\ChangePassword\\frmChangePassword.cs",
-              "RelativeDocumentMoniker": "QLShopQuanAo\\Views\\Main\\ChangePassword\\frmChangePassword.cs",
-              "ToolTip": "D:\\C#\\Project\\QLShopQuanAo\\QLShopQuanAo\\Views\\Main\\ChangePassword\\frmChangePassword.cs",
-              "RelativeToolTip": "QLShopQuanAo\\Views\\Main\\ChangePassword\\frmChangePassword.cs",
-              "ViewState": "AgIAADUAAAAAAAAAAAAvwE4AAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-16T11:24:09.392Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-28T10:49:17.075Z"
             }
           ]
         }

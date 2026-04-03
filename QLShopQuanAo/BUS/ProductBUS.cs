@@ -39,7 +39,7 @@ namespace QLShopQuanAo.BUS
         {
             return dal.UpdateStatus(id, status);
         }
-        public DataTable SearchAtiveProduct(string name, int maLoai)
+        public DataTable SearchActiveProduct(string name, int maLoai)
         {
             return dal.SearchActiveProduct(name, maLoai);
         }

@@ -13,7 +13,7 @@ namespace QLShopQuanAo.DAL
         //Hàm lưu chi tiết hóa đơn (Lưu từng món hàng một)áds
         public static bool InsertOrderDetail(int maHD, int maSP, int soLuong, decimal donGia)
         {
-            string sql = "INSERT INTO ChiTietHoaDon(MaHD, MaSP, SoLuong, DonGia) VALUES(@mahd, @masp, @sl, @dg)";
+            string  sql = "INSERT INTO ChiTietHoaDon(MaHD, MaSP, SoLuong, DonGia) VALUES(@mahd, @masp, @sl, @dg)";
             SqlParameter[] pars = {
                 new SqlParameter("@mahd", maHD),
                 new SqlParameter("@masp", maSP),

@@ -13,6 +13,7 @@ namespace QLShopQuanAo.Views.Main.Order
     public partial class frmPayment : Form
     {
         BUS.OrderBUS oBUS = new BUS.OrderBUS();
+        DAL.CustomerDAL cDAL = new DAL.CustomerDAL();
         public string TenNV_Nhan { get; set; }
         public int MaNV_DangNhap { get; set; }
         public int MaKH_Nhan { get; set; }
@@ -95,6 +96,7 @@ namespace QLShopQuanAo.Views.Main.Order
             if (maHD_Moi > 0)
             {
                 MessageBox.Show("Thanh toán thành công!");
+                cDAL.UpdateCustomerScore(this.MaKH_Nhan, this.TongTien_Nhan);
 
                 frmInvoice f = new frmInvoice();
                 f.MaHD = maHD_Moi.ToString();

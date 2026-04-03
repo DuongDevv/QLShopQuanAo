@@ -15,5 +15,8 @@ namespace QLShopQuanAo.DTO
         public string Email { get; set; }
         public string DiaChi { get; set; }
         public DateTime NgayDK { get; set; }
+        public decimal TongChiTieu { get; set; }
+        public int DiemTichLuy {  get; set; }
+        public string LoaiThanhVien {  get; set; }
     }
 }

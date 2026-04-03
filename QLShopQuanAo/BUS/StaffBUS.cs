@@ -13,7 +13,7 @@ namespace QLShopQuanAo.BUS
             return dal.GetAll();
         }
 
-        public int AddStaff(StaffDTO nv)
+        public bool AddStaff(StaffDTO nv)
         {
             return dal.InsertAndGetID(nv);
         }
@@ -37,6 +37,10 @@ namespace QLShopQuanAo.BUS
            return dal.GetStaffInfo(id);
         }
 
+        public StaffDTO CheckLogin(string user, string pass)
+        {
+            return dal.CheckLogin(user, pass);
+        }
        
     }
 }

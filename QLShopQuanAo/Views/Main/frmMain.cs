@@ -26,7 +26,6 @@ namespace QLShopQuanAo.Views.Main
         BUS.ProductBUS spBUS = new BUS.ProductBUS();
         BUS.ReportBUS rptBUS = new BUS.ReportBUS();
         BUS.ImportBUS ipBUS = new BUS.ImportBUS();
-        BUS.AccountBUS accBUS = new BUS.AccountBUS();
 
         public string ChucVu_DangNhap { get; set; }
         public int MaNV_DangNhap { get; set; }
@@ -133,7 +132,27 @@ namespace QLShopQuanAo.Views.Main
                 }
             }
         }
+        //Phân quyền giữ nhân viên và Quản lí khi đăng nhập
+        private void AccessControl(string chucVu)
+        {
+            if(chucVu == "Nhân viên")
+            {
+                btnProduct.Visible = false;      
+                btnImportProduct.Visible = false;
+                btnCustomer.Visible = false;     
+                btnStaff.Visible = false;
+                btnInsertProduct.Visible = false;
+                btnExportExcel.Visible = false;
 
+            }
+            else
+            {
+                btnProduct.Visible = true;
+                btnImportProduct.Visible = true;
+                btnCustomer.Visible = true;
+                btnStaff.Visible = true;
+            }
+        }
 
 
 
@@ -170,7 +189,9 @@ namespace QLShopQuanAo.Views.Main
                 SDT = txtPhoneNumberStaff.Text.Trim(),
                 Email = txtEmailStaff.Text.Trim(),
                 ChucVu = cboPositionStaff.Text,
-                HinhAnh = currentFileName
+                HinhAnh = currentFileName,
+                TenTK = txtStaffUser.Text.Trim(),
+                MatKhau = txtStaffPassword.Text.Trim(),
             };
 
             if (string.IsNullOrWhiteSpace(nv.TenNV))
@@ -234,34 +255,11 @@ namespace QLShopQuanAo.Views.Main
                 txtPhoneNumberStaff.Focus();
                 return;
             }
-
-            int newMaNV = nvBUS.AddStaff(nv);
-
-            if (newMaNV > 0) // Kiểm tra nếu ID trả về hợp lệ
+            if (nvBUS.AddStaff(nv))
             {
-                // Tạo tài khoản mới sử dụng AccountBUS và AccountDTO đã tạo ở file mới
-                AccountDTO newAcc = new AccountDTO(txtStaffUser.Text, txtStaffPassword.Text, newMaNV, cboPositionStaff.Text);
-
-                string resultAcc = accBUS.CreateAccount(newAcc);
-
-                if (resultAcc == "OK")
-                {
-                    MessageBox.Show("Thêm nhân viên và tài khoản thành công!", "Thông báo");
-                    LoadDataNhanVien();
-                    btnReset_Click(sender, e);
-                }
-                else
-                {
-                    MessageBox.Show("Nhân viên đã tạo nhưng lỗi tài khoản: " + resultAcc);
-                }
+                MessageBox.Show("Thêm nhân viên thành công!");
+                LoadDataNhanVien();
             }
-            else
-            {
-                MessageBox.Show("Thêm nhân viên thất bại!");
-            }
-
-
-
         }
 
         private void btnUpdateStaff_Click(object sender, EventArgs e)
@@ -281,7 +279,9 @@ namespace QLShopQuanAo.Views.Main
                 SDT = txtPhoneNumberStaff.Text.Trim(),
                 Email = txtEmailStaff.Text.Trim(),
                 ChucVu = cboPositionStaff.Text,
-                HinhAnh = currentFileName
+                HinhAnh = currentFileName,
+                TenTK = txtStaffUser.Text.Trim(),
+                MatKhau = txtStaffPassword.Text.Trim()
             };
 
             if (!IsValidEmail(nv.Email))
@@ -318,18 +318,8 @@ namespace QLShopQuanAo.Views.Main
                 txtPhoneNumberStaff.Text = row.Cells["SĐT"].Value.ToString();
                 txtEmailStaff.Text = row.Cells["Email"].Value.ToString();
                 cboPositionStaff.Text = row.Cells["Chức Vụ"].Value.ToString();
-                int maNV = Convert.ToInt32(txtIDStaff.Text);
-                DataTable dtAcc = accBUS.GetAccountDetails(maNV);
-                if (dtAcc.Rows.Count > 0)
-                {
-                    txtStaffUser.Text = dtAcc.Rows[0]["TenTK"].ToString();
-                    txtStaffPassword.Text = dtAcc.Rows[0]["MatKhau"].ToString();
-                }
-                else
-                {
-                    txtStaffUser.Clear();
-                    txtStaffPassword.Clear();
-                }
+                txtStaffUser.Text = row.Cells["Tên TK"].Value.ToString();
+                txtStaffPassword.Text = row.Cells["Mật Khẩu"].Value.ToString();
 
                 picAvatarStaff.Image?.Dispose();
                 picAvatarStaff.Image = null;
@@ -577,6 +567,8 @@ namespace QLShopQuanAo.Views.Main
                 txtEmailCustomer.Text = row.Cells["Email"].Value.ToString();
                 txtAddressCustomer.Text = row.Cells["Địa Chỉ"].Value.ToString();
                 dtpRegistrationDateCustomer.Value = Convert.ToDateTime(row.Cells["Ngày Đăng Ký"].Value);
+                lblCustomerRank.Text = row.Cells["Loại Thành Viên"].Value?.ToString() ?? "Mới";
+                lblCustomerScore.Text = row.Cells["Điểm Tích Lũy"].Value?.ToString() ?? "0";
             }
         }
 
@@ -715,12 +707,20 @@ namespace QLShopQuanAo.Views.Main
             {
                 DataGridViewRow row = dgvProduct.Rows[e.RowIndex];
 
+                // 1. Lấy thông tin chung
                 txtIDProduct.Text = row.Cells["Mã SP"].Value.ToString();
                 txtNameProduct.Text = row.Cells["Tên SP"].Value.ToString();
-                txtQuantityProduct.Text = row.Cells["Số lượng"].Value.ToString();
                 txtUnitProduct.Text = row.Cells["DVT"].Value.ToString();
-                txtPriceProduct.Text = row.Cells["Đơn giá"].Value.ToString();
                 cboTypeProduct.Text = row.Cells["Loại SP"].Value.ToString();
+
+                // 2. Lấy thông tin chi tiết biến thể (MỚI)
+                // Lưu MaChiTiet vào một biến tạm hoặc một Label ẩn để dùng khi Update
+                txtMaChiTiet.Text = row.Cells["MaChiTiet"].Value.ToString();
+
+                txtQuantityProduct.Text = row.Cells["Số lượng"].Value.ToString();
+                txtPriceProduct.Text = row.Cells["Đơn giá"].Value.ToString();
+                cboSize.Text = row.Cells["Kích cỡ"].Value.ToString();
+                cboColor.Text = row.Cells["Màu sắc"].Value.ToString();
                 picAvatarProduct.Image?.Dispose();
                 picAvatarProduct.Image = null;
                 currentFileName = "";
@@ -752,14 +752,25 @@ namespace QLShopQuanAo.Views.Main
                 return;
             }
 
+            if (string.IsNullOrWhiteSpace(txtMaChiTiet.Text))
+            {
+                MessageBox.Show("Vui lòng chọn sản phẩm cần sửa!", "Thông báo",
+                    MessageBoxButtons.OK);
+                return;
+            }
+
             DTO.ProductDTO sp = new DTO.ProductDTO
             {
+                MaSP = int.Parse(txtIDProduct.Text),
+                MaChiTiet = int.Parse(txtMaChiTiet.Text), 
                 TenSP = txtNameProduct.Text.Trim(),
                 MaLoai = Convert.ToInt32(cboTypeProduct.SelectedValue),
                 DVT = txtUnitProduct.Text.Trim(),
                 SoLuongTon = int.Parse(txtQuantityProduct.Text),
                 GiaBan = decimal.Parse(txtPriceProduct.Text),
-                HinhAnh = currentFileName
+                HinhAnh = currentFileName,
+                KichCo = cboSize.Text,
+                MauSac = cboColor.Text
             };
 
             try
@@ -821,11 +832,14 @@ namespace QLShopQuanAo.Views.Main
         private void btnResetProduct_Click(object sender, EventArgs e)
         {
             txtIDProduct.Clear();
+            txtMaChiTiet.Clear();
             txtNameProduct.Clear();
             txtQuantityProduct.Clear();
             txtUnitProduct.Clear();
             txtPriceProduct.Clear();
             cboTypeProduct.SelectedIndex = -1;
+            cboSize.SelectedIndex = -1;
+            cboColor.SelectedIndex = -1; 
             picAvatarProduct.Image?.Dispose();
             picAvatarProduct.Image = null;
             currentFileName = "";
@@ -872,6 +886,8 @@ namespace QLShopQuanAo.Views.Main
                 SoLuongTon = string.IsNullOrEmpty(txtQuantityProduct.Text) ? 0 : int.Parse(txtQuantityProduct.Text),
                 GiaBan = string.IsNullOrEmpty(txtPriceProduct.Text) ? 0 : decimal.Parse(txtPriceProduct.Text),
                 HinhAnh = currentFileName,
+                KichCo = cboSize.Text,
+                MauSac = cboColor.Text,
                 TrangThai = "Đang kinh doanh"
             };
 
@@ -945,6 +961,7 @@ namespace QLShopQuanAo.Views.Main
             dgvCart.Columns["SoLuong"].HeaderText = "SL";
             dgvCart.Columns["DonGia"].HeaderText = "Đơn Giá";
             dgvCart.Columns["ThanhTien"].HeaderText = "Thành Tiền";
+            
         }
         private void LoadDataSanPhamChoBanHang()
         {
@@ -953,14 +970,19 @@ namespace QLShopQuanAo.Views.Main
 
         private void TinhTongTien()
         {
-            decimal tongCong = 0;
+            decimal tongChuaGiam = 0;
             foreach (DataRow row in cartTable.Rows)
             {
-                tongCong += Convert.ToDecimal(row["ThanhTien"]);
+                tongChuaGiam += Convert.ToDecimal(row["ThanhTien"]);
             }
-            lblTotalAmount.Text = tongCong.ToString("N0") + " VNĐ";
-            lblTotalAmount.ForeColor = Color.Red;
-            lblTotalAmount.Font = new Font(lblTotalAmount.Font, FontStyle.Bold);
+            int percent = GetDiscountRate(lblRank.Text);
+
+            decimal soTienGiam = tongChuaGiam * percent / 100;
+            decimal tongPhaiTra = tongChuaGiam - soTienGiam;
+
+            lblDiscountPercent.Text = $"{percent}%";
+            lblDiscountAmount.Text = $"{soTienGiam:N0} VNĐ";
+            lblTotalAmount.Text = tongPhaiTra.ToString("N0") + " VNĐ";
         }
 
         private void FilterOrderProduct()
@@ -972,7 +994,7 @@ namespace QLShopQuanAo.Views.Main
                 maLoai = (int)cboSearchOrderProductType.SelectedValue;
             }
 
-            dgvProductsOrder.DataSource = spBUS.SearchAtiveProduct(nameKey, maLoai);
+            dgvProductsOrder.DataSource = spBUS.SearchActiveProduct(nameKey, maLoai);
         }
 
         private void btnApplySearchOrderProduct_Click(object sender, EventArgs e)
@@ -1028,6 +1050,7 @@ namespace QLShopQuanAo.Views.Main
                 cartTable.Clear();
                 TinhTongTien();
                 LoadDataSanPhamChoBanHang();
+                LoadDataKhachHang();
                 cboCustomerOrder.SelectedIndex = -1;
             }
         }
@@ -1089,6 +1112,35 @@ namespace QLShopQuanAo.Views.Main
 
             }
         }
+        private void chkShowPassword_CheckedChanged(object sender, EventArgs e)
+        {
+            txtAccountPassword.UseSystemPasswordChar = !chkShowPassword.Checked;
+        }
+
+        private void cboCustomerOrder_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (cboCustomerOrder.SelectedValue != null && cboCustomerOrder.SelectedValue is int)
+            {
+                int maKH = (int)cboCustomerOrder.SelectedValue;
+
+                DTO.CustomerDTO kh = khBUS.GetCustomerByID(maKH);
+
+                if (kh != null)
+                {
+                    lblRank.Text =  kh.LoaiThanhVien;
+                    TinhTongTien();
+                }
+            }
+        }
+        private int GetDiscountRate(string rank)
+        {
+            if (rank == "Bạc") return 3;
+            if (rank == "Vàng") return 5;
+            if (rank == "Đen (VIP)") return 10;
+            return 0; 
+        }
+
+
 
 
 
@@ -1318,16 +1370,13 @@ namespace QLShopQuanAo.Views.Main
             if (dtDoanhThu.Rows.Count == 0 || dtDoanhThu == null) return dtResult;
 
             decimal totalSameDay = 0;
-            // Lấy ngày của dòng ĐẦU TIÊN (Index 0) để làm mốc so sánh
             string today = dtDoanhThu.Rows[0]["Ngày Lập"].ToString().Substring(0, 10);
 
             for (int i = 0; i < dtDoanhThu.Rows.Count; i++)
             {
-                // Thống nhất tên cột là "Ngày Lập"
                 string dateRow = dtDoanhThu.Rows[i]["Ngày Lập"].ToString().Substring(0, 10);
                 decimal amount = Convert.ToDecimal(dtDoanhThu.Rows[i]["Tổng Tiền"]);
 
-                // Nếu phát hiện đổi sang ngày khác -> Chèn dòng tổng của ngày cũ
                 if (dateRow != today)
                 {
                     DataRow totalRow = dtResult.NewRow();
@@ -1335,7 +1384,6 @@ namespace QLShopQuanAo.Views.Main
                     totalRow["Tổng Tiền"] = totalSameDay;
                     dtResult.Rows.Add(totalRow);
 
-                    // Reset mốc cho ngày mới
                     totalSameDay = 0;
                     today = dateRow;
                 }
@@ -1343,7 +1391,6 @@ namespace QLShopQuanAo.Views.Main
                 dtResult.ImportRow(dtDoanhThu.Rows[i]);
                 totalSameDay += amount;
 
-                // Nếu là dòng cuối cùng của cả bảng -> Chèn nốt tổng của ngày cuối
                 if (i == dtDoanhThu.Rows.Count - 1)
                 {
                     DataRow totalLastRow = dtResult.NewRow();
@@ -1377,7 +1424,6 @@ namespace QLShopQuanAo.Views.Main
                     chkShowPassword.Checked = false;
 
 
-                    // Xử lý hiển thị ảnh tương tự như cũ nhưng dùng r["HinhAnh"]
                     string fileName = r["HinhAnh"].ToString();
                     if (!string.IsNullOrEmpty(fileName))
                     {
@@ -1411,39 +1457,9 @@ namespace QLShopQuanAo.Views.Main
         
 
 
-        //Phân quyền giữ nhân viên và Quản lí khi đăng nhập
-        private void AccessControl(string chucVu)
-        {
-            if(chucVu == "Nhân viên")
-            {
-                btnProduct.Visible = false;      
-                btnImportProduct.Visible = false;
-                btnCustomer.Visible = false;     
-                btnStaff.Visible = false;
-                btnInsertProduct.Visible = false;
-                btnExportExcel.Visible = false;
+        
 
-            }
-            else
-            {
-                btnProduct.Visible = true;
-                btnImportProduct.Visible = true;
-                btnCustomer.Visible = true;
-                btnStaff.Visible = true;
-            }
-        }
-
-        private void chkShowPassword_CheckedChanged(object sender, EventArgs e)
-        {
-            txtAccountPassword.UseSystemPasswordChar = !chkShowPassword.Checked;
-        }
-
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-
+        
     }
 }
 

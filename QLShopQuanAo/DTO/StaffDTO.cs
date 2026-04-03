@@ -17,6 +17,8 @@ namespace QLShopQuanAo.DTO
         public string Email { get; set; }
         public string TrangThai {  get; set; }
         public string HinhAnh {  get; set; }
+        public string TenTK { get; set; }
+        public string MatKhau { get; set; }
 
     }
 }

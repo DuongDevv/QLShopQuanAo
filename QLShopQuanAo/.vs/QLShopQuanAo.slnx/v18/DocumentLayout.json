@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "D:\\C#\\Project\\QLShopQuanAo\\QLShopQuanAo\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\C#\\Project\\QLShopQuanAo\\QLShopQuanAo\\QLShopQuanAo.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:QLShopQuanAo.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\C#\\Project\\QLShopQuanAo\\QLShopQuanAo\\Views\\Main\\frmMain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Views\\Main\\frmMain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -39,6 +43,19 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "QLShopQuanAo.csproj",
+              "DocumentMoniker": "D:\\C#\\Project\\QLShopQuanAo\\QLShopQuanAo\\QLShopQuanAo.csproj",
+              "RelativeDocumentMoniker": "QLShopQuanAo.csproj",
+              "ToolTip": "D:\\C#\\Project\\QLShopQuanAo\\QLShopQuanAo\\QLShopQuanAo.csproj",
+              "RelativeToolTip": "QLShopQuanAo.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-04-03T13:50:23.474Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "frmMain.cs",
               "DocumentMoniker": "D:\\C#\\Project\\QLShopQuanAo\\QLShopQuanAo\\Views\\Main\\frmMain.cs",
               "RelativeDocumentMoniker": "Views\\Main\\frmMain.cs",
@@ -51,7 +68,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "ImportDAL.cs",
               "DocumentMoniker": "D:\\C#\\Project\\QLShopQuanAo\\QLShopQuanAo\\DAL\\ImportDAL.cs",
               "RelativeDocumentMoniker": "DAL\\ImportDAL.cs",
@@ -63,7 +80,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "frmPayment.cs",
               "DocumentMoniker": "D:\\C#\\Project\\QLShopQuanAo\\QLShopQuanAo\\Views\\Main\\Order\\frmPayment.cs",
               "RelativeDocumentMoniker": "Views\\Main\\Order\\frmPayment.cs",
@@ -75,7 +92,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "ReportDAL.cs",
               "DocumentMoniker": "D:\\C#\\Project\\QLShopQuanAo\\QLShopQuanAo\\DAL\\ReportDAL.cs",
               "RelativeDocumentMoniker": "DAL\\ReportDAL.cs",
